@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6816433E17614A7A00C75EA3 /* burgmapcom.tilejson in Resources */ = {isa = PBXBuildFile; fileRef = 6816433D17614A7A00C75EA3 /* burgmapcom.tilejson */; };
+		6816434017614DB800C75EA3 /* testmap.tilejson in Resources */ = {isa = PBXBuildFile; fileRef = 6816433F17614DB800C75EA3 /* testmap.tilejson */; };
+		6816434317652BD200C75EA3 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816434217652BD200C75EA3 /* DetailViewController.m */; };
+		6816434D176571D800C75EA3 /* MGSplitCornersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68164346176571D800C75EA3 /* MGSplitCornersView.m */; };
+		6816434E176571D800C75EA3 /* MGSplitDividerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68164348176571D800C75EA3 /* MGSplitDividerView.m */; };
+		68164350176571D800C75EA3 /* MGSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816434C176571D800C75EA3 /* MGSplitViewController.m */; };
+		6816435617663A2300C75EA3 /* MGSplitViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816435517663A2200C75EA3 /* MGSplitViewAppDelegate.m */; };
+		68718CA91766895E00A80747 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68718CA81766895E00A80747 /* MainWindow.xib */; };
+		68718D0017668CA500A80747 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68718CFF17668CA500A80747 /* DetailView.xib */; };
+		688BE8761761324E00283929 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE8751761324E00283929 /* UIKit.framework */; };
+		688BE8781761324E00283929 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE8771761324E00283929 /* Foundation.framework */; };
+		688BE87A1761324E00283929 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE8791761324E00283929 /* CoreGraphics.framework */; };
+		688BE8801761324E00283929 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 688BE87E1761324E00283929 /* InfoPlist.strings */; };
+		688BE8821761324E00283929 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 688BE8811761324E00283929 /* main.m */; };
+		688BE8921761324E00283929 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 688BE8911761324E00283929 /* RootViewController.m */; };
+		688BE8A01761324E00283929 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE89F1761324E00283929 /* SenTestingKit.framework */; };
+		688BE8A11761324E00283929 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE8751761324E00283929 /* UIKit.framework */; };
+		688BE8A21761324E00283929 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE8771761324E00283929 /* Foundation.framework */; };
+		688BE8AA1761324E00283929 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 688BE8A81761324E00283929 /* InfoPlist.strings */; };
+		688BE8AD1761324E00283929 /* Burgundy_Wine_MapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 688BE8AC1761324E00283929 /* Burgundy_Wine_MapTests.m */; };
+		688BE8B9176134D600283929 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE8B8176134D600283929 /* CoreLocation.framework */; };
+		688BE8BB176134DE00283929 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE8BA176134DE00283929 /* QuartzCore.framework */; };
+		688BE8BD176134E600283929 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE8BC176134E600283929 /* libsqlite3.dylib */; };
+		688BE8BF176134EC00283929 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE8BE176134EC00283929 /* libz.dylib */; };
+		68A1D06D1766ABB400EDE0A7 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A1D06C1766ABB400EDE0A7 /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		68A1D07F1766DE1C00EDE0A7 /* MapBox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 68A1D07E1766DE1B00EDE0A7 /* MapBox.bundle */; };
+		68B597011766E560000B9A30 /* libMapBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B596F91766E4C4000B9A30 /* libMapBox.a */; };
+		68B5970317679562000B9A30 /* RootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68B5970217679562000B9A30 /* RootView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		688BE8A31761324E00283929 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 688BE86A1761324E00283929 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 688BE8711761324E00283929;
+			remoteInfo = "Burgundy Wine Map";
+		};
+		68B596F81766E4C4000B9A30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68B596F31766E4C4000B9A30 /* MapView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 17F31EFA1331050A00122B16;
+			remoteInfo = MapView;
+		};
+		68B596FA1766E4C4000B9A30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68B596F31766E4C4000B9A30 /* MapView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DD6A83751644A20C0097F31F;
+			remoteInfo = Resources;
+		};
+		68B596FC1766E522000B9A30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68B596F31766E4C4000B9A30 /* MapView.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B8C974130E8A19B2007D16AD;
+			remoteInfo = MapView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6816433D17614A7A00C75EA3 /* burgmapcom.tilejson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = burgmapcom.tilejson; sourceTree = "<group>"; };
+		6816433F17614DB800C75EA3 /* testmap.tilejson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testmap.tilejson; sourceTree = "<group>"; };
+		6816434117652BD200C75EA3 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		6816434217652BD200C75EA3 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		68164345176571D800C75EA3 /* MGSplitCornersView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSplitCornersView.h; sourceTree = "<group>"; };
+		68164346176571D800C75EA3 /* MGSplitCornersView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSplitCornersView.m; sourceTree = "<group>"; };
+		68164347176571D800C75EA3 /* MGSplitDividerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSplitDividerView.h; sourceTree = "<group>"; };
+		68164348176571D800C75EA3 /* MGSplitDividerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSplitDividerView.m; sourceTree = "<group>"; };
+		6816434B176571D800C75EA3 /* MGSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSplitViewController.h; sourceTree = "<group>"; };
+		6816434C176571D800C75EA3 /* MGSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSplitViewController.m; sourceTree = "<group>"; };
+		6816435417663A2200C75EA3 /* MGSplitViewAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSplitViewAppDelegate.h; sourceTree = "<group>"; };
+		6816435517663A2200C75EA3 /* MGSplitViewAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSplitViewAppDelegate.m; sourceTree = "<group>"; };
+		68718CA81766895E00A80747 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		68718CFF17668CA500A80747 /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		688BE8721761324E00283929 /* Burgundy Wine Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Burgundy Wine Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		688BE8751761324E00283929 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		688BE8771761324E00283929 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		688BE8791761324E00283929 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		688BE87D1761324E00283929 /* Burgundy Wine Map-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Burgundy Wine Map-Info.plist"; sourceTree = "<group>"; };
+		688BE87F1761324E00283929 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		688BE8811761324E00283929 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		688BE8831761324E00283929 /* Burgundy Wine Map-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Burgundy Wine Map-Prefix.pch"; sourceTree = "<group>"; };
+		688BE8901761324E00283929 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		688BE8911761324E00283929 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		688BE89E1761324E00283929 /* Burgundy Wine MapTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Burgundy Wine MapTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		688BE89F1761324E00283929 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		688BE8A71761324E00283929 /* Burgundy Wine MapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Burgundy Wine MapTests-Info.plist"; sourceTree = "<group>"; };
+		688BE8A91761324E00283929 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		688BE8AB1761324E00283929 /* Burgundy_Wine_MapTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Burgundy_Wine_MapTests.h; sourceTree = "<group>"; };
+		688BE8AC1761324E00283929 /* Burgundy_Wine_MapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Burgundy_Wine_MapTests.m; sourceTree = "<group>"; };
+		688BE8B8176134D600283929 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		688BE8BA176134DE00283929 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		688BE8BC176134E600283929 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		688BE8BE176134EC00283929 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		68A1D06B1766ABB400EDE0A7 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		68A1D06C1766ABB400EDE0A7 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		68A1D07E1766DE1B00EDE0A7 /* MapBox.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MapBox.bundle; sourceTree = "<group>"; };
+		68B596F31766E4C4000B9A30 /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "mapbox-ios-sdk/MapView/MapView.xcodeproj"; sourceTree = "<group>"; };
+		68B5970217679562000B9A30 /* RootView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		688BE86F1761324E00283929 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68B597011766E560000B9A30 /* libMapBox.a in Frameworks */,
+				688BE8BF176134EC00283929 /* libz.dylib in Frameworks */,
+				688BE8BD176134E600283929 /* libsqlite3.dylib in Frameworks */,
+				688BE8BB176134DE00283929 /* QuartzCore.framework in Frameworks */,
+				688BE8B9176134D600283929 /* CoreLocation.framework in Frameworks */,
+				688BE8761761324E00283929 /* UIKit.framework in Frameworks */,
+				688BE8781761324E00283929 /* Foundation.framework in Frameworks */,
+				688BE87A1761324E00283929 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		688BE89A1761324E00283929 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				688BE8A01761324E00283929 /* SenTestingKit.framework in Frameworks */,
+				688BE8A11761324E00283929 /* UIKit.framework in Frameworks */,
+				688BE8A21761324E00283929 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68164344176571D800C75EA3 /* MGSplitView */ = {
+			isa = PBXGroup;
+			children = (
+				68164345176571D800C75EA3 /* MGSplitCornersView.h */,
+				68164346176571D800C75EA3 /* MGSplitCornersView.m */,
+				68164347176571D800C75EA3 /* MGSplitDividerView.h */,
+				68164348176571D800C75EA3 /* MGSplitDividerView.m */,
+				6816434B176571D800C75EA3 /* MGSplitViewController.h */,
+				6816434C176571D800C75EA3 /* MGSplitViewController.m */,
+			);
+			path = MGSplitView;
+			sourceTree = "<group>";
+		};
+		688BE8691761324E00283929 = {
+			isa = PBXGroup;
+			children = (
+				688BE8BE176134EC00283929 /* libz.dylib */,
+				688BE8BC176134E600283929 /* libsqlite3.dylib */,
+				688BE8BA176134DE00283929 /* QuartzCore.framework */,
+				688BE8B8176134D600283929 /* CoreLocation.framework */,
+				688BE87B1761324E00283929 /* Burgundy Wine Map */,
+				688BE8A51761324E00283929 /* Burgundy Wine MapTests */,
+				688BE8741761324E00283929 /* Frameworks */,
+				688BE8731761324E00283929 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		688BE8731761324E00283929 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				688BE8721761324E00283929 /* Burgundy Wine Map.app */,
+				688BE89E1761324E00283929 /* Burgundy Wine MapTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		688BE8741761324E00283929 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				688BE8751761324E00283929 /* UIKit.framework */,
+				688BE8771761324E00283929 /* Foundation.framework */,
+				688BE8791761324E00283929 /* CoreGraphics.framework */,
+				688BE89F1761324E00283929 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		688BE87B1761324E00283929 /* Burgundy Wine Map */ = {
+			isa = PBXGroup;
+			children = (
+				6816435417663A2200C75EA3 /* MGSplitViewAppDelegate.h */,
+				6816435517663A2200C75EA3 /* MGSplitViewAppDelegate.m */,
+				688BE8901761324E00283929 /* RootViewController.h */,
+				688BE8911761324E00283929 /* RootViewController.m */,
+				6816434117652BD200C75EA3 /* DetailViewController.h */,
+				6816434217652BD200C75EA3 /* DetailViewController.m */,
+				68718CA81766895E00A80747 /* MainWindow.xib */,
+				68B5970217679562000B9A30 /* RootView.xib */,
+				68718CFF17668CA500A80747 /* DetailView.xib */,
+				68164344176571D800C75EA3 /* MGSplitView */,
+				688BE87C1761324E00283929 /* Supporting Files */,
+			);
+			path = "Burgundy Wine Map";
+			sourceTree = "<group>";
+		};
+		688BE87C1761324E00283929 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68B596F31766E4C4000B9A30 /* MapView.xcodeproj */,
+				68A1D07E1766DE1B00EDE0A7 /* MapBox.bundle */,
+				6816433D17614A7A00C75EA3 /* burgmapcom.tilejson */,
+				6816433F17614DB800C75EA3 /* testmap.tilejson */,
+				688BE87D1761324E00283929 /* Burgundy Wine Map-Info.plist */,
+				688BE87E1761324E00283929 /* InfoPlist.strings */,
+				688BE8811761324E00283929 /* main.m */,
+				688BE8831761324E00283929 /* Burgundy Wine Map-Prefix.pch */,
+				68A1D06B1766ABB400EDE0A7 /* NSData+Base64.h */,
+				68A1D06C1766ABB400EDE0A7 /* NSData+Base64.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		688BE8A51761324E00283929 /* Burgundy Wine MapTests */ = {
+			isa = PBXGroup;
+			children = (
+				688BE8AB1761324E00283929 /* Burgundy_Wine_MapTests.h */,
+				688BE8AC1761324E00283929 /* Burgundy_Wine_MapTests.m */,
+				688BE8A61761324E00283929 /* Supporting Files */,
+			);
+			path = "Burgundy Wine MapTests";
+			sourceTree = "<group>";
+		};
+		688BE8A61761324E00283929 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				688BE8A71761324E00283929 /* Burgundy Wine MapTests-Info.plist */,
+				688BE8A81761324E00283929 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68B596F41766E4C4000B9A30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68B596F91766E4C4000B9A30 /* libMapBox.a */,
+				68B596FB1766E4C4000B9A30 /* MapBox.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		688BE8711761324E00283929 /* Burgundy Wine Map */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 688BE8B01761324E00283929 /* Build configuration list for PBXNativeTarget "Burgundy Wine Map" */;
+			buildPhases = (
+				688BE86E1761324E00283929 /* Sources */,
+				688BE86F1761324E00283929 /* Frameworks */,
+				688BE8701761324E00283929 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68B596FD1766E522000B9A30 /* PBXTargetDependency */,
+			);
+			name = "Burgundy Wine Map";
+			productName = "Burgundy Wine Map";
+			productReference = 688BE8721761324E00283929 /* Burgundy Wine Map.app */;
+			productType = "com.apple.product-type.application";
+		};
+		688BE89D1761324E00283929 /* Burgundy Wine MapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 688BE8B31761324E00283929 /* Build configuration list for PBXNativeTarget "Burgundy Wine MapTests" */;
+			buildPhases = (
+				688BE8991761324E00283929 /* Sources */,
+				688BE89A1761324E00283929 /* Frameworks */,
+				688BE89B1761324E00283929 /* Resources */,
+				688BE89C1761324E00283929 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				688BE8A41761324E00283929 /* PBXTargetDependency */,
+			);
+			name = "Burgundy Wine MapTests";
+			productName = "Burgundy Wine MapTests";
+			productReference = 688BE89E1761324E00283929 /* Burgundy Wine MapTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		688BE86A1761324E00283929 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Daryl Lau";
+			};
+			buildConfigurationList = 688BE86D1761324E00283929 /* Build configuration list for PBXProject "Burgundy Wine Map" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 688BE8691761324E00283929;
+			productRefGroup = 688BE8731761324E00283929 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 68B596F41766E4C4000B9A30 /* Products */;
+					ProjectRef = 68B596F31766E4C4000B9A30 /* MapView.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				688BE8711761324E00283929 /* Burgundy Wine Map */,
+				688BE89D1761324E00283929 /* Burgundy Wine MapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		68B596F91766E4C4000B9A30 /* libMapBox.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMapBox.a;
+			remoteRef = 68B596F81766E4C4000B9A30 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		68B596FB1766E4C4000B9A30 /* MapBox.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MapBox.bundle;
+			remoteRef = 68B596FA1766E4C4000B9A30 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		688BE8701761324E00283929 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				688BE8801761324E00283929 /* InfoPlist.strings in Resources */,
+				6816433E17614A7A00C75EA3 /* burgmapcom.tilejson in Resources */,
+				6816434017614DB800C75EA3 /* testmap.tilejson in Resources */,
+				68718CA91766895E00A80747 /* MainWindow.xib in Resources */,
+				68718D0017668CA500A80747 /* DetailView.xib in Resources */,
+				68A1D07F1766DE1C00EDE0A7 /* MapBox.bundle in Resources */,
+				68B5970317679562000B9A30 /* RootView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		688BE89B1761324E00283929 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				688BE8AA1761324E00283929 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		688BE89C1761324E00283929 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		688BE86E1761324E00283929 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				688BE8821761324E00283929 /* main.m in Sources */,
+				688BE8921761324E00283929 /* RootViewController.m in Sources */,
+				6816434317652BD200C75EA3 /* DetailViewController.m in Sources */,
+				6816434D176571D800C75EA3 /* MGSplitCornersView.m in Sources */,
+				6816434E176571D800C75EA3 /* MGSplitDividerView.m in Sources */,
+				68164350176571D800C75EA3 /* MGSplitViewController.m in Sources */,
+				6816435617663A2300C75EA3 /* MGSplitViewAppDelegate.m in Sources */,
+				68A1D06D1766ABB400EDE0A7 /* NSData+Base64.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		688BE8991761324E00283929 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				688BE8AD1761324E00283929 /* Burgundy_Wine_MapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		688BE8A41761324E00283929 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 688BE8711761324E00283929 /* Burgundy Wine Map */;
+			targetProxy = 688BE8A31761324E00283929 /* PBXContainerItemProxy */;
+		};
+		68B596FD1766E522000B9A30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MapView;
+			targetProxy = 68B596FC1766E522000B9A30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		688BE87E1761324E00283929 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				688BE87F1761324E00283929 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		688BE8A81761324E00283929 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				688BE8A91761324E00283929 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		688BE8AE1761324E00283929 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		688BE8AF1761324E00283929 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		688BE8B11761324E00283929 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Burgundy Wine Map/Burgundy Wine Map-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Burgundy\\ Wine\\ Map/mapbox-ios-sdk/**",
+				);
+				INFOPLIST_FILE = "Burgundy Wine Map/Burgundy Wine Map-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		688BE8B21761324E00283929 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Burgundy Wine Map/Burgundy Wine Map-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Burgundy\\ Wine\\ Map/mapbox-ios-sdk/**",
+				);
+				INFOPLIST_FILE = "Burgundy Wine Map/Burgundy Wine Map-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		688BE8B41761324E00283929 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Burgundy Wine Map.app/Burgundy Wine Map";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Burgundy Wine Map/Burgundy Wine Map-Prefix.pch";
+				INFOPLIST_FILE = "Burgundy Wine MapTests/Burgundy Wine MapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		688BE8B51761324E00283929 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Burgundy Wine Map.app/Burgundy Wine Map";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Burgundy Wine Map/Burgundy Wine Map-Prefix.pch";
+				INFOPLIST_FILE = "Burgundy Wine MapTests/Burgundy Wine MapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		688BE86D1761324E00283929 /* Build configuration list for PBXProject "Burgundy Wine Map" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				688BE8AE1761324E00283929 /* Debug */,
+				688BE8AF1761324E00283929 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		688BE8B01761324E00283929 /* Build configuration list for PBXNativeTarget "Burgundy Wine Map" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				688BE8B11761324E00283929 /* Debug */,
+				688BE8B21761324E00283929 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		688BE8B31761324E00283929 /* Build configuration list for PBXNativeTarget "Burgundy Wine MapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				688BE8B41761324E00283929 /* Debug */,
+				688BE8B51761324E00283929 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 688BE86A1761324E00283929 /* Project object */;
+}
