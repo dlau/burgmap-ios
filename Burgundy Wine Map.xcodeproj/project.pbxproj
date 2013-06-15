@@ -25,8 +25,6 @@
 		688BE8A01761324E00283929 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE89F1761324E00283929 /* SenTestingKit.framework */; };
 		688BE8A11761324E00283929 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE8751761324E00283929 /* UIKit.framework */; };
 		688BE8A21761324E00283929 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE8771761324E00283929 /* Foundation.framework */; };
-		688BE8AA1761324E00283929 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 688BE8A81761324E00283929 /* InfoPlist.strings */; };
-		688BE8AD1761324E00283929 /* Burgundy_Wine_MapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 688BE8AC1761324E00283929 /* Burgundy_Wine_MapTests.m */; };
 		688BE8B9176134D600283929 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE8B8176134D600283929 /* CoreLocation.framework */; };
 		688BE8BB176134DE00283929 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE8BA176134DE00283929 /* QuartzCore.framework */; };
 		688BE8BD176134E600283929 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE8BC176134E600283929 /* libsqlite3.dylib */; };
@@ -95,10 +93,6 @@
 		688BE8911761324E00283929 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		688BE89E1761324E00283929 /* Burgundy Wine MapTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Burgundy Wine MapTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		688BE89F1761324E00283929 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		688BE8A71761324E00283929 /* Burgundy Wine MapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Burgundy Wine MapTests-Info.plist"; sourceTree = "<group>"; };
-		688BE8A91761324E00283929 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		688BE8AB1761324E00283929 /* Burgundy_Wine_MapTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Burgundy_Wine_MapTests.h; sourceTree = "<group>"; };
-		688BE8AC1761324E00283929 /* Burgundy_Wine_MapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Burgundy_Wine_MapTests.m; sourceTree = "<group>"; };
 		688BE8B8176134D600283929 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		688BE8BA176134DE00283929 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		688BE8BC176134E600283929 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -160,7 +154,6 @@
 				688BE8BA176134DE00283929 /* QuartzCore.framework */,
 				688BE8B8176134D600283929 /* CoreLocation.framework */,
 				688BE87B1761324E00283929 /* Burgundy Wine Map */,
-				688BE8A51761324E00283929 /* Burgundy Wine MapTests */,
 				688BE8741761324E00283929 /* Frameworks */,
 				688BE8731761324E00283929 /* Products */,
 			);
@@ -217,25 +210,6 @@
 				688BE8831761324E00283929 /* Burgundy Wine Map-Prefix.pch */,
 				68A1D06B1766ABB400EDE0A7 /* NSData+Base64.h */,
 				68A1D06C1766ABB400EDE0A7 /* NSData+Base64.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		688BE8A51761324E00283929 /* Burgundy Wine MapTests */ = {
-			isa = PBXGroup;
-			children = (
-				688BE8AB1761324E00283929 /* Burgundy_Wine_MapTests.h */,
-				688BE8AC1761324E00283929 /* Burgundy_Wine_MapTests.m */,
-				688BE8A61761324E00283929 /* Supporting Files */,
-			);
-			path = "Burgundy Wine MapTests";
-			sourceTree = "<group>";
-		};
-		688BE8A61761324E00283929 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				688BE8A71761324E00283929 /* Burgundy Wine MapTests-Info.plist */,
-				688BE8A81761324E00283929 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -358,7 +332,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				688BE8AA1761324E00283929 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +373,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				688BE8AD1761324E00283929 /* Burgundy_Wine_MapTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,14 +396,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				688BE87F1761324E00283929 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		688BE8A81761324E00283929 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				688BE8A91761324E00283929 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

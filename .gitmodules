@@ -1,7 +1,3 @@
-[submodule "MapView/Map/FMDB"]
-	path = "Burgundy Wine Map/mapbox-ios-sdk/MapView/Map/FMDB"
-	url = https://github.com/ccgus/fmdb.git
-[submodule "MapView/Map/GRMustache"]
-	path = "Burgundy Wine Map/mapbox-ios-sdk/MapView/Map/GRMustache"
-	url = https://github.com/groue/GRMustache.git
-
+[submodule "Burgundy Wine Map/mapbox-ios-sdk"]
+	path = "Burgundy Wine Map/mapbox-ios-sdk"
+	url = https://github.com/dlau/mapbox-ios-sdk.git
