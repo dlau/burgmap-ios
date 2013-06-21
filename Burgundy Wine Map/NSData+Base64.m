@@ -101,7 +101,10 @@ void *NewBase64Decode(
 		size_t accumulateIndex = 0;
 		while (i < length)
 		{
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wchar-subscripts"
 			unsigned char decode = base64DecodeLookup[inputBuffer[i++]];
+#pragma GCC diagnostic pop
 			if (decode != xx)
 			{
 				accumulated[accumulateIndex] = decode;

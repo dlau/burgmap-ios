@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6816433E17614A7A00C75EA3 /* burgmapcom.tilejson in Resources */ = {isa = PBXBuildFile; fileRef = 6816433D17614A7A00C75EA3 /* burgmapcom.tilejson */; };
-		6816434017614DB800C75EA3 /* testmap.tilejson in Resources */ = {isa = PBXBuildFile; fileRef = 6816433F17614DB800C75EA3 /* testmap.tilejson */; };
 		6816434317652BD200C75EA3 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816434217652BD200C75EA3 /* DetailViewController.m */; };
 		6816434D176571D800C75EA3 /* MGSplitCornersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68164346176571D800C75EA3 /* MGSplitCornersView.m */; };
 		6816434E176571D800C75EA3 /* MGSplitDividerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68164348176571D800C75EA3 /* MGSplitDividerView.m */; };
@@ -22,27 +20,27 @@
 		688BE8801761324E00283929 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 688BE87E1761324E00283929 /* InfoPlist.strings */; };
 		688BE8821761324E00283929 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 688BE8811761324E00283929 /* main.m */; };
 		688BE8921761324E00283929 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 688BE8911761324E00283929 /* RootViewController.m */; };
-		688BE8A01761324E00283929 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE89F1761324E00283929 /* SenTestingKit.framework */; };
-		688BE8A11761324E00283929 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE8751761324E00283929 /* UIKit.framework */; };
-		688BE8A21761324E00283929 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE8771761324E00283929 /* Foundation.framework */; };
 		688BE8B9176134D600283929 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE8B8176134D600283929 /* CoreLocation.framework */; };
 		688BE8BB176134DE00283929 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE8BA176134DE00283929 /* QuartzCore.framework */; };
 		688BE8BD176134E600283929 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE8BC176134E600283929 /* libsqlite3.dylib */; };
 		688BE8BF176134EC00283929 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE8BE176134EC00283929 /* libz.dylib */; };
 		68A1D06D1766ABB400EDE0A7 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A1D06C1766ABB400EDE0A7 /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		68A1D07F1766DE1C00EDE0A7 /* MapBox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 68A1D07E1766DE1B00EDE0A7 /* MapBox.bundle */; };
 		68B597011766E560000B9A30 /* libMapBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B596F91766E4C4000B9A30 /* libMapBox.a */; };
 		68B5970317679562000B9A30 /* RootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68B5970217679562000B9A30 /* RootView.xib */; };
+		FB0F21A617742AD30034274D /* BMMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0F21A517742AD30034274D /* BMMapManager.m */; };
+		FB3859E2177176900097D988 /* map-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = FB3859E1177176900097D988 /* map-marker.png */; };
+		FB87A824177188D900F455D7 /* blank-40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = FB87A823177188D900F455D7 /* blank-40x40.png */; };
+		FB8B2CD21771358700ABC983 /* burgmap-ios-search.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = FB8B2CD11771358700ABC983 /* burgmap-ios-search.sqlite */; };
+		FB8DDBF11774216E001EF6F4 /* BurgCtBDorBg.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = FB8DDBF01774216E001EF6F4 /* BurgCtBDorBg.mbtiles */; };
+		FBD3C8E8176E784F00A919EF /* BurgChablisCurrent.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = FBD3C8E4176E784F00A919EF /* BurgChablisCurrent.mbtiles */; };
+		FBD3C8E9176E784F00A919EF /* BurgCtBDorCurrent.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = FBD3C8E5176E784F00A919EF /* BurgCtBDorCurrent.mbtiles */; };
+		FBD3C8EA176E784F00A919EF /* FraLargeBg.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = FBD3C8E6176E784F00A919EF /* FraLargeBg.mbtiles */; };
+		FBEAC8F617722B4A001B17EC /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = FBEAC8F517722B4A001B17EC /* Icon-72.png */; };
+		FBEAC8F817722B54001B17EC /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBEAC8F717722B54001B17EC /* Icon-72@2x.png */; };
+		FBFFDA291774E94E00299A38 /* MapBox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 68B596FB1766E4C4000B9A30 /* MapBox.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		688BE8A31761324E00283929 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 688BE86A1761324E00283929 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 688BE8711761324E00283929;
-			remoteInfo = "Burgundy Wine Map";
-		};
 		68B596F81766E4C4000B9A30 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 68B596F31766E4C4000B9A30 /* MapView.xcodeproj */;
@@ -67,8 +65,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6816433D17614A7A00C75EA3 /* burgmapcom.tilejson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = burgmapcom.tilejson; sourceTree = "<group>"; };
-		6816433F17614DB800C75EA3 /* testmap.tilejson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testmap.tilejson; sourceTree = "<group>"; };
 		6816434117652BD200C75EA3 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		6816434217652BD200C75EA3 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		68164345176571D800C75EA3 /* MGSplitCornersView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSplitCornersView.h; sourceTree = "<group>"; };
@@ -91,7 +87,6 @@
 		688BE8831761324E00283929 /* Burgundy Wine Map-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Burgundy Wine Map-Prefix.pch"; sourceTree = "<group>"; };
 		688BE8901761324E00283929 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		688BE8911761324E00283929 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		688BE89E1761324E00283929 /* Burgundy Wine MapTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Burgundy Wine MapTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		688BE89F1761324E00283929 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		688BE8B8176134D600283929 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		688BE8BA176134DE00283929 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -99,9 +94,19 @@
 		688BE8BE176134EC00283929 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		68A1D06B1766ABB400EDE0A7 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		68A1D06C1766ABB400EDE0A7 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
-		68A1D07E1766DE1B00EDE0A7 /* MapBox.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MapBox.bundle; sourceTree = "<group>"; };
 		68B596F31766E4C4000B9A30 /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "mapbox-ios-sdk/MapView/MapView.xcodeproj"; sourceTree = "<group>"; };
 		68B5970217679562000B9A30 /* RootView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootView.xib; sourceTree = "<group>"; };
+		FB0F21A417742AD30034274D /* BMMapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMMapManager.h; sourceTree = "<group>"; };
+		FB0F21A517742AD30034274D /* BMMapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMMapManager.m; sourceTree = "<group>"; };
+		FB3859E1177176900097D988 /* map-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-marker.png"; sourceTree = "<group>"; };
+		FB87A823177188D900F455D7 /* blank-40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blank-40x40.png"; sourceTree = "<group>"; };
+		FB8B2CD11771358700ABC983 /* burgmap-ios-search.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "burgmap-ios-search.sqlite"; sourceTree = "<group>"; };
+		FB8DDBF01774216E001EF6F4 /* BurgCtBDorBg.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = BurgCtBDorBg.mbtiles; sourceTree = "<group>"; };
+		FBD3C8E4176E784F00A919EF /* BurgChablisCurrent.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = BurgChablisCurrent.mbtiles; sourceTree = "<group>"; };
+		FBD3C8E5176E784F00A919EF /* BurgCtBDorCurrent.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = BurgCtBDorCurrent.mbtiles; sourceTree = "<group>"; };
+		FBD3C8E6176E784F00A919EF /* FraLargeBg.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = FraLargeBg.mbtiles; sourceTree = "<group>"; };
+		FBEAC8F517722B4A001B17EC /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "../../Icon-72.png"; sourceTree = "<group>"; };
+		FBEAC8F717722B54001B17EC /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72@2x.png"; path = "../../Icon-72@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,16 +122,6 @@
 				688BE8761761324E00283929 /* UIKit.framework in Frameworks */,
 				688BE8781761324E00283929 /* Foundation.framework in Frameworks */,
 				688BE87A1761324E00283929 /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		688BE89A1761324E00283929 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				688BE8A01761324E00283929 /* SenTestingKit.framework in Frameworks */,
-				688BE8A11761324E00283929 /* UIKit.framework in Frameworks */,
-				688BE8A21761324E00283929 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				688BE8721761324E00283929 /* Burgundy Wine Map.app */,
-				688BE89E1761324E00283929 /* Burgundy Wine MapTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,6 +176,8 @@
 		688BE87B1761324E00283929 /* Burgundy Wine Map */ = {
 			isa = PBXGroup;
 			children = (
+				FB0F21A417742AD30034274D /* BMMapManager.h */,
+				FB0F21A517742AD30034274D /* BMMapManager.m */,
 				6816435417663A2200C75EA3 /* MGSplitViewAppDelegate.h */,
 				6816435517663A2200C75EA3 /* MGSplitViewAppDelegate.m */,
 				688BE8901761324E00283929 /* RootViewController.h */,
@@ -191,7 +187,6 @@
 				68718CA81766895E00A80747 /* MainWindow.xib */,
 				68B5970217679562000B9A30 /* RootView.xib */,
 				68718CFF17668CA500A80747 /* DetailView.xib */,
-				68164344176571D800C75EA3 /* MGSplitView */,
 				688BE87C1761324E00283929 /* Supporting Files */,
 			);
 			path = "Burgundy Wine Map";
@@ -200,10 +195,10 @@
 		688BE87C1761324E00283929 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FB8B2CBD1771261400ABC983 /* External Sources */,
+				FBD3C8E3176E784F00A919EF /* Resources */,
+				68164344176571D800C75EA3 /* MGSplitView */,
 				68B596F31766E4C4000B9A30 /* MapView.xcodeproj */,
-				68A1D07E1766DE1B00EDE0A7 /* MapBox.bundle */,
-				6816433D17614A7A00C75EA3 /* burgmapcom.tilejson */,
-				6816433F17614DB800C75EA3 /* testmap.tilejson */,
 				688BE87D1761324E00283929 /* Burgundy Wine Map-Info.plist */,
 				688BE87E1761324E00283929 /* InfoPlist.strings */,
 				688BE8811761324E00283929 /* main.m */,
@@ -221,6 +216,29 @@
 				68B596FB1766E4C4000B9A30 /* MapBox.bundle */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FB8B2CBD1771261400ABC983 /* External Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "External Sources";
+			sourceTree = "<group>";
+		};
+		FBD3C8E3176E784F00A919EF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FBEAC8F717722B54001B17EC /* Icon-72@2x.png */,
+				FBEAC8F517722B4A001B17EC /* Icon-72.png */,
+				FB8DDBF01774216E001EF6F4 /* BurgCtBDorBg.mbtiles */,
+				FB87A823177188D900F455D7 /* blank-40x40.png */,
+				FB3859E1177176900097D988 /* map-marker.png */,
+				FB8B2CD11771358700ABC983 /* burgmap-ios-search.sqlite */,
+				FBD3C8E4176E784F00A919EF /* BurgChablisCurrent.mbtiles */,
+				FBD3C8E5176E784F00A919EF /* BurgCtBDorCurrent.mbtiles */,
+				FBD3C8E6176E784F00A919EF /* FraLargeBg.mbtiles */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,25 +261,6 @@
 			productName = "Burgundy Wine Map";
 			productReference = 688BE8721761324E00283929 /* Burgundy Wine Map.app */;
 			productType = "com.apple.product-type.application";
-		};
-		688BE89D1761324E00283929 /* Burgundy Wine MapTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 688BE8B31761324E00283929 /* Build configuration list for PBXNativeTarget "Burgundy Wine MapTests" */;
-			buildPhases = (
-				688BE8991761324E00283929 /* Sources */,
-				688BE89A1761324E00283929 /* Frameworks */,
-				688BE89B1761324E00283929 /* Resources */,
-				688BE89C1761324E00283929 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				688BE8A41761324E00283929 /* PBXTargetDependency */,
-			);
-			name = "Burgundy Wine MapTests";
-			productName = "Burgundy Wine MapTests";
-			productReference = 688BE89E1761324E00283929 /* Burgundy Wine MapTests.octest */;
-			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -291,7 +290,6 @@
 			projectRoot = "";
 			targets = (
 				688BE8711761324E00283929 /* Burgundy Wine Map */,
-				688BE89D1761324E00283929 /* Burgundy Wine MapTests */,
 			);
 		};
 /* End PBXProject section */
@@ -319,39 +317,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				688BE8801761324E00283929 /* InfoPlist.strings in Resources */,
-				6816433E17614A7A00C75EA3 /* burgmapcom.tilejson in Resources */,
-				6816434017614DB800C75EA3 /* testmap.tilejson in Resources */,
 				68718CA91766895E00A80747 /* MainWindow.xib in Resources */,
 				68718D0017668CA500A80747 /* DetailView.xib in Resources */,
-				68A1D07F1766DE1C00EDE0A7 /* MapBox.bundle in Resources */,
 				68B5970317679562000B9A30 /* RootView.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		688BE89B1761324E00283929 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				FBD3C8E8176E784F00A919EF /* BurgChablisCurrent.mbtiles in Resources */,
+				FBD3C8E9176E784F00A919EF /* BurgCtBDorCurrent.mbtiles in Resources */,
+				FBD3C8EA176E784F00A919EF /* FraLargeBg.mbtiles in Resources */,
+				FB8B2CD21771358700ABC983 /* burgmap-ios-search.sqlite in Resources */,
+				FB3859E2177176900097D988 /* map-marker.png in Resources */,
+				FB87A824177188D900F455D7 /* blank-40x40.png in Resources */,
+				FBEAC8F617722B4A001B17EC /* Icon-72.png in Resources */,
+				FBEAC8F817722B54001B17EC /* Icon-72@2x.png in Resources */,
+				FB8DDBF11774216E001EF6F4 /* BurgCtBDorBg.mbtiles in Resources */,
+				FBFFDA291774E94E00299A38 /* MapBox.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		688BE89C1761324E00283929 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		688BE86E1761324E00283929 /* Sources */ = {
@@ -366,24 +348,13 @@
 				68164350176571D800C75EA3 /* MGSplitViewController.m in Sources */,
 				6816435617663A2300C75EA3 /* MGSplitViewAppDelegate.m in Sources */,
 				68A1D06D1766ABB400EDE0A7 /* NSData+Base64.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		688BE8991761324E00283929 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				FB0F21A617742AD30034274D /* BMMapManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		688BE8A41761324E00283929 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 688BE8711761324E00283929 /* Burgundy Wine Map */;
-			targetProxy = 688BE8A31761324E00283929 /* PBXContainerItemProxy */;
-		};
 		68B596FD1766E522000B9A30 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MapView;
@@ -430,6 +401,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-Wall";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -454,7 +426,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"-Wall",
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -464,6 +439,7 @@
 		688BE8B11761324E00283929 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -475,7 +451,8 @@
 				);
 				INFOPLIST_FILE = "Burgundy Wine Map/Burgundy Wine Map-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Burgundy Wine Map";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -483,6 +460,7 @@
 		688BE8B21761324E00283929 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -494,42 +472,9 @@
 				);
 				INFOPLIST_FILE = "Burgundy Wine Map/Burgundy Wine Map-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Burgundy Wine Map";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		688BE8B41761324E00283929 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Burgundy Wine Map.app/Burgundy Wine Map";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Burgundy Wine Map/Burgundy Wine Map-Prefix.pch";
-				INFOPLIST_FILE = "Burgundy Wine MapTests/Burgundy Wine MapTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		688BE8B51761324E00283929 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Burgundy Wine Map.app/Burgundy Wine Map";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Burgundy Wine Map/Burgundy Wine Map-Prefix.pch";
-				INFOPLIST_FILE = "Burgundy Wine MapTests/Burgundy Wine MapTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -550,15 +495,6 @@
 			buildConfigurations = (
 				688BE8B11761324E00283929 /* Debug */,
 				688BE8B21761324E00283929 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		688BE8B31761324E00283929 /* Build configuration list for PBXNativeTarget "Burgundy Wine MapTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				688BE8B41761324E00283929 /* Debug */,
-				688BE8B51761324E00283929 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

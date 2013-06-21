@@ -13,23 +13,22 @@
 
 @class RootViewController;
 
-@interface DetailViewController : UIViewController <UIPopoverControllerDelegate, MGSplitViewControllerDelegate, RMMapViewDelegate> {
+
+@interface DetailViewController : UIViewController <MGSplitViewControllerDelegate, RMMapViewDelegate, UISearchBarDelegate, UISearchDisplayDelegate> {
 	IBOutlet MGSplitViewController *splitController;
     RootViewController *rootViewController;
-    
+
     id detailItem;
     
 }
-
-
 @property (nonatomic, strong) id detailItem;
-@property (nonatomic, strong) UIPopoverController *popoverController;
 @property (nonatomic, retain) IBOutlet RootViewController *rootViewController;
 
-- (IBAction)toggleMasterView:(id)sender;
-- (IBAction)toggleVertical:(id)sender;
-- (IBAction)toggleDividerStyle:(id)sender;
-- (IBAction)toggleMasterBeforeDetail:(id)sender;
+@property IBOutlet UISearchBar *searchBar;
+@property IBOutlet UIToolbar *toolBar;
+@property IBOutlet UISegmentedControl *bgLayerSegmentedControl;
+
+- (IBAction)toggleBaseLayerType:(id)sender;
 
 
 @end

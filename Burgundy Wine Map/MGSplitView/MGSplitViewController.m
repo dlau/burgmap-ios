@@ -34,7 +34,6 @@
 - (BOOL)shouldShowMasterForInterfaceOrientation:(UIInterfaceOrientation)theOrientation;
 - (BOOL)shouldShowMaster;
 - (NSString *)nameOfInterfaceOrientation:(UIInterfaceOrientation)theOrientation;
-- (void)reconfigureForMasterInPopover:(BOOL)inPopover;
 
 @end
 
@@ -125,7 +124,7 @@
 	_viewControllers = [[NSMutableArray alloc] initWithObjects:[NSNull null], [NSNull null], nil];
 	_splitWidth = MG_DEFAULT_SPLIT_WIDTH;
 	_showsMasterInPortrait = NO;
-	_showsMasterInLandscape = YES;
+	_showsMasterInLandscape = NO;
 	_reconfigurePopup = NO;
 	_vertical = YES;
 	_masterBeforeDetail = YES;
@@ -142,6 +141,8 @@
 	_dividerView.splitViewController = self;
 	_dividerView.backgroundColor = MG_DEFAULT_CORNER_COLOR;
 	_dividerStyle = MGSplitViewDividerStyleThin;
+    
+    self.view.autoresizesSubviews = NO;
 }
 
 
@@ -182,11 +183,6 @@
 {
 	[self.masterViewController willAnimateRotationToInterfaceOrientation:toInterfaceOrientation duration:duration];
 	[self.detailViewController willAnimateRotationToInterfaceOrientation:toInterfaceOrientation duration:duration];
-	
-	// Hide popover.
-	if (_hiddenPopoverController && _hiddenPopoverController.popoverVisible) {
-		[_hiddenPopoverController dismissPopoverAnimated:NO];
-	}
 	
 	// Re-tile views.
 	_reconfigurePopup = YES;
@@ -244,10 +240,6 @@
 
 - (void)layoutSubviewsForInterfaceOrientation:(UIInterfaceOrientation)theOrientation withAnimation:(BOOL)animate
 {
-	if (_reconfigurePopup) {
-		[self reconfigureForMasterInPopover:![self shouldShowMasterForInterfaceOrientation:theOrientation]];
-	}
-	
 	// Layout the master, detail and divider views appropriately, adding/removing subviews as needed.
 	// First obtain relevant geometry.
 	CGSize fullSize = [self splitViewSizeForOrientation:theOrientation];
@@ -531,78 +523,6 @@
 }
 
 
-#pragma mark -
-#pragma mark Popover handling
-
-
-- (void)reconfigureForMasterInPopover:(BOOL)inPopover
-{
-	_reconfigurePopup = NO;
-	
-	if ((inPopover && _hiddenPopoverController) || (!inPopover && !_hiddenPopoverController) || !self.masterViewController) {
-		// Nothing to do.
-		return;
-	}
-	
-	if (inPopover && !_hiddenPopoverController && !_barButtonItem) {
-		// Create and configure popover for our masterViewController.
-		_hiddenPopoverController = nil;
-		[self.masterViewController viewWillDisappear:NO];
-		_hiddenPopoverController = [[UIPopoverController alloc] initWithContentViewController:self.masterViewController];
-		[self.masterViewController viewDidDisappear:NO];
-		
-		// Create and configure _barButtonItem.
-		_barButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Master", nil) 
-														  style:UIBarButtonItemStyleBordered 
-														 target:self 
-														 action:@selector(showMasterPopover:)];
-		
-		// Inform delegate of this state of affairs.
-		if (_delegate && [_delegate respondsToSelector:@selector(splitViewController:willHideViewController:withBarButtonItem:forPopoverController:)]) {
-			[(NSObject <MGSplitViewControllerDelegate> *)_delegate splitViewController:self 
-																willHideViewController:self.masterViewController 
-																	 withBarButtonItem:_barButtonItem 
-																  forPopoverController:_hiddenPopoverController];
-		}
-		
-	} else if (!inPopover && _hiddenPopoverController && _barButtonItem) {
-		// I know this looks strange, but it fixes a bizarre issue with UIPopoverController leaving masterViewController's views in disarray.
-		[_hiddenPopoverController presentPopoverFromRect:CGRectZero inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:NO];
-		
-		// Remove master from popover and destroy popover, if it exists.
-		[_hiddenPopoverController dismissPopoverAnimated:NO];
-		_hiddenPopoverController = nil;
-		
-		// Inform delegate that the _barButtonItem will become invalid.
-		if (_delegate && [_delegate respondsToSelector:@selector(splitViewController:willShowViewController:invalidatingBarButtonItem:)]) {
-			[(NSObject <MGSplitViewControllerDelegate> *)_delegate splitViewController:self 
-																willShowViewController:self.masterViewController 
-															 invalidatingBarButtonItem:_barButtonItem];
-		}
-		
-		// Destroy _barButtonItem.
-		_barButtonItem = nil;
-		
-		// Move master view.
-		UIView *masterView = self.masterViewController.view;
-		if (masterView && masterView.superview != self.view) {
-			[masterView removeFromSuperview];
-		}
-	}
-}
-
-
-- (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController
-{
-	[self reconfigureForMasterInPopover:NO];
-}
-
-
-- (void)notePopoverDismissed
-{
-	[self popoverControllerDidDismissPopover:_hiddenPopoverController];
-}
-
 
 #pragma mark -
 #pragma mark Animations
@@ -669,14 +589,9 @@
 
 - (IBAction)toggleMasterView:(id)sender
 {
-	if (_hiddenPopoverController && _hiddenPopoverController.popoverVisible) {
-		[_hiddenPopoverController dismissPopoverAnimated:NO];
-	}
-	
 	if (![self isShowingMaster]) {
 		// We're about to show the master view. Ensure it's in place off-screen to be animated in.
 		_reconfigurePopup = YES;
-		[self reconfigureForMasterInPopover:NO];
 		[self layoutSubviews];
 	}
 	
@@ -688,22 +603,6 @@
 		self.showsMasterInPortrait = !_showsMasterInPortrait;
 	}
 	[UIView commitAnimations];
-}
-
-
-- (IBAction)showMasterPopover:(id)sender
-{
-	if (_hiddenPopoverController && !(_hiddenPopoverController.popoverVisible)) {
-		// Inform delegate.
-		if (_delegate && [_delegate respondsToSelector:@selector(splitViewController:popoverController:willPresentViewController:)]) {
-			[(NSObject <MGSplitViewControllerDelegate> *)_delegate splitViewController:self 
-																	 popoverController:_hiddenPopoverController 
-															 willPresentViewController:self.masterViewController];
-		}
-		
-		// Show popover.
-		[_hiddenPopoverController presentPopoverFromBarButtonItem:_barButtonItem permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
-	}
 }
 
 
@@ -738,10 +637,6 @@
 		_showsMasterInPortrait = flag;
 		
 		if (![self isLandscape]) { // i.e. if this will cause a visual change.
-			if (_hiddenPopoverController && _hiddenPopoverController.popoverVisible) {
-				[_hiddenPopoverController dismissPopoverAnimated:NO];
-			}
-			
 			// Rearrange views.
 			_reconfigurePopup = YES;
 			[self layoutSubviews];
@@ -762,10 +657,6 @@
 		_showsMasterInLandscape = flag;
 		
 		if ([self isLandscape]) { // i.e. if this will cause a visual change.
-			if (_hiddenPopoverController && _hiddenPopoverController.popoverVisible) {
-				[_hiddenPopoverController dismissPopoverAnimated:NO];
-			}
-			
 			// Rearrange views.
 			_reconfigurePopup = YES;
 			[self layoutSubviews];
@@ -783,10 +674,6 @@
 - (void)setVertical:(BOOL)flag
 {
 	if (flag != _vertical) {
-		if (_hiddenPopoverController && _hiddenPopoverController.popoverVisible) {
-			[_hiddenPopoverController dismissPopoverAnimated:NO];
-		}
-		
 		_vertical = flag;
 		
 		// Inform delegate.
@@ -808,10 +695,6 @@
 - (void)setMasterBeforeDetail:(BOOL)flag
 {
 	if (flag != _masterBeforeDetail) {
-		if (_hiddenPopoverController && _hiddenPopoverController.popoverVisible) {
-			[_hiddenPopoverController dismissPopoverAnimated:NO];
-		}
-		
 		_masterBeforeDetail = flag;
 		
 		if ([self isShowingMaster]) {
@@ -845,10 +728,6 @@
 	}
 	
 	if (constrained) {
-		if (_hiddenPopoverController && _hiddenPopoverController.popoverVisible) {
-			[_hiddenPopoverController dismissPopoverAnimated:NO];
-		}
-		
 		_splitPosition = newPosn;
 		
 		// Inform delegate.
@@ -1046,10 +925,6 @@
 
 - (void)setDividerStyle:(MGSplitViewDividerStyle)newStyle
 {
-	if (_hiddenPopoverController && _hiddenPopoverController.popoverVisible) {
-		[_hiddenPopoverController dismissPopoverAnimated:NO];
-	}
-	
 	// We don't check to see if newStyle equals _dividerStyle, because it's a meta-setting.
 	// Aspects could have been changed since it was set.
 	_dividerStyle = newStyle;

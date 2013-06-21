@@ -1,3 +1,6 @@
 [submodule "Burgundy Wine Map/mapbox-ios-sdk"]
 	path = "Burgundy Wine Map/mapbox-ios-sdk"
 	url = https://github.com/dlau/mapbox-ios-sdk.git
+[submodule "Burgundy Wine Map/fmdb"]
+	path = Burgundy Wine Map/fmdb
+	url = https://github.com/ccgus/fmdb.git
