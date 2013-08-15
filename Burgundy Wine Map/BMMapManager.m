@@ -19,12 +19,9 @@
     RMMBTilesSource *m_SourceCtBDorLayer;
     RMMBTilesSource *m_SourceChablisLayer;
 
+    RMMapBoxSource *m_SourceOnlineStreetsBase;
     RMMapBoxSource *m_SourceOnlineTerrainBase;
     RMMapBoxSource *m_SourceOnlineSatelliteBase;
-    
-    NSArray *m_SourcesStreet;
-    NSArray *m_SourcesTerrain;
-    NSArray *m_SourcesSatellite;
     
     FMDatabase *m_SearchDb;
     //This contains the last search result
@@ -41,42 +38,35 @@
     return instance;
 }
 
-- (RMCompositeSource*)getCompositeLayer:(BaseLayerSelection)layerType
+- (RMMapBoxSource*) getOnlineMapBoxLayer:(BaseLayerSelection)layerType
 {
     
-    NSArray *arrLayers = nil;
     if(layerType == eBLS_Streets)
     {
-        arrLayers = m_SourcesStreet;
+        return m_SourceOnlineStreetsBase;
     }
     else if(layerType == eBLS_Terrain)
     {
-        arrLayers = m_SourcesTerrain;
+        return m_SourceOnlineTerrainBase;
     }
     else if(layerType == eBLS_Satellite)
     {
-        arrLayers = m_SourcesSatellite;
+        return m_SourceOnlineSatelliteBase;
     }
-    else
-    {
-        //err out
-    }
-    
-    return [[RMCompositeSource alloc] initWithTileSources:arrLayers tileCacheKey:nil];
-    
+    return m_SourceOnlineStreetsBase;
 }
 
 - (void)setBaseLayer:(BaseLayerSelection)layerType forMapView:(RMMapView*)mapView;
 {
     [mapView setTileSource:
-     [self getCompositeLayer:layerType]];
+     [self getOnlineMapBoxLayer:layerType]];
 }
 
 
 - (RMMapView*)createMapViewWithBaseLayer:(BaseLayerSelection)layerType withFrame:(CGRect)frame
 {
     return [[RMMapView alloc]
-            initWithFrame:frame andTilesource:[self getCompositeLayer:layerType]];
+            initWithFrame:frame andTilesource:[self getOnlineMapBoxLayer:layerType]];
 }
 
 -(NSArray*) getSearchResultsForText:(NSString*)searchText
@@ -131,21 +121,9 @@
     m_SourceCtBDorLayer = [[RMMBTilesSource alloc] initWithTileSetResource: MBTILES_COTEBEAUNE_COTEDOR_RESOURCE_NAME ofType:@"mbtiles"];
     m_SourceChablisLayer = [[RMMBTilesSource alloc] initWithTileSetResource:MBTILES_CHABLIS_RESOURCE_NAME ofType:@"mbtiles"];
     
+    m_SourceOnlineStreetsBase = [[RMMapBoxSource alloc] initWithMapID: MAPBOX_COM_PLAIN_STREET_LAYER_ID];
     m_SourceOnlineTerrainBase = [[RMMapBoxSource alloc] initWithMapID: MAPBOX_COM_PLAIN_TERRAIN_LAYER_ID];
     m_SourceOnlineSatelliteBase = [[RMMapBoxSource alloc] initWithMapID: MAPBOX_COM_PLAIN_SATELLITE_LAYER_ID];
-    
-    m_SourcesStreet = [[NSArray alloc] initWithObjects:
-                       m_SourceOfflineStreetsBase,
-                       m_SourceCtBDorLayer,
-                       m_SourceChablisLayer, nil];
-    m_SourcesTerrain = [[NSArray alloc] initWithObjects:
-                       m_SourceOnlineTerrainBase,
-                       m_SourceCtBDorLayer,
-                       m_SourceChablisLayer, nil];
-    m_SourcesSatellite = [[NSArray alloc] initWithObjects:
-                       m_SourceOnlineSatelliteBase,
-                       m_SourceCtBDorLayer,
-                       m_SourceChablisLayer, nil];
 }
 
 -(void) initSearchDb

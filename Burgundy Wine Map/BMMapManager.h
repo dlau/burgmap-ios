@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "Mapbox.h"
 
-static NSString * const MAPBOX_COM_PLAIN_TERRAIN_LAYER_ID = @"phatdood9.map-eclrvtg7";
-static NSString * const MAPBOX_COM_PLAIN_SATELLITE_LAYER_ID = @"phatdood9.map-uv41arrl";
+static NSString * const MAPBOX_COM_PLAIN_STREET_LAYER_ID = @"phatdood9.map-h0o2l0du";
+static NSString * const MAPBOX_COM_PLAIN_TERRAIN_LAYER_ID = @"phatdood9.map-48vsy6uz";
+static NSString * const MAPBOX_COM_PLAIN_SATELLITE_LAYER_ID = @"phatdood9.map-s601p9rt";
 
 static NSString * const MBTILES_BASELAYER_RESOURCE_NAME = @"FraLargeBg";
 static NSString * const MBTILES_COTEBEAUNE_COTEDOR_RESOURCE_NAME = @"BurgCtBDorCurrent";

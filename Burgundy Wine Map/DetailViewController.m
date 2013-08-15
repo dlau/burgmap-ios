@@ -62,7 +62,7 @@
 {
     [self configureView];
     
-    RMMBTilesSource *source = (RMMBTilesSource *)mapView.tileSource;
+    RMMapBoxSource *source = (RMMapBoxSource *)mapView.tileSource;
     
     if ([source conformsToProtocol:@protocol(RMInteractiveSource)] && [source supportsInteractivity])
     {
@@ -149,6 +149,7 @@
     marker.canShowCallout = YES;
     
     marker.leftCalloutAccessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"map-marker.png"]];
+    
     // marker.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
     
     
@@ -168,8 +169,8 @@
     m_SearchResults = [[BMMapManager getInstance] getSearchResultsForText:searchText];
 }
 
--(void)searchDisplayController:(UISearchDisplayController *)controller
- didLoadm_SearchResultsTableView:(UITableView *)tableView
+- (void)searchDisplayController:(UISearchDisplayController *)controller
+    didLoadSearchResultsTableView:(UITableView *)tableView
 {
     if(controller != nil)
     {
