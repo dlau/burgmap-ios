@@ -7,76 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6816434317652BD200C75EA3 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816434217652BD200C75EA3 /* DetailViewController.m */; };
-		6816434D176571D800C75EA3 /* MGSplitCornersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68164346176571D800C75EA3 /* MGSplitCornersView.m */; };
-		6816434E176571D800C75EA3 /* MGSplitDividerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68164348176571D800C75EA3 /* MGSplitDividerView.m */; };
-		68164350176571D800C75EA3 /* MGSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816434C176571D800C75EA3 /* MGSplitViewController.m */; };
-		6816435617663A2300C75EA3 /* MGSplitViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6816435517663A2200C75EA3 /* MGSplitViewAppDelegate.m */; };
-		68718CA91766895E00A80747 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68718CA81766895E00A80747 /* MainWindow.xib */; };
-		68718D0017668CA500A80747 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68718CFF17668CA500A80747 /* DetailView.xib */; };
 		688BE8761761324E00283929 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE8751761324E00283929 /* UIKit.framework */; };
 		688BE8781761324E00283929 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE8771761324E00283929 /* Foundation.framework */; };
 		688BE87A1761324E00283929 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE8791761324E00283929 /* CoreGraphics.framework */; };
 		688BE8801761324E00283929 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 688BE87E1761324E00283929 /* InfoPlist.strings */; };
 		688BE8821761324E00283929 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 688BE8811761324E00283929 /* main.m */; };
-		688BE8921761324E00283929 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 688BE8911761324E00283929 /* RootViewController.m */; };
 		688BE8B9176134D600283929 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE8B8176134D600283929 /* CoreLocation.framework */; };
 		688BE8BB176134DE00283929 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE8BA176134DE00283929 /* QuartzCore.framework */; };
 		688BE8BD176134E600283929 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE8BC176134E600283929 /* libsqlite3.dylib */; };
 		688BE8BF176134EC00283929 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 688BE8BE176134EC00283929 /* libz.dylib */; };
 		68A1D06D1766ABB400EDE0A7 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A1D06C1766ABB400EDE0A7 /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		68B597011766E560000B9A30 /* libMapBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B596F91766E4C4000B9A30 /* libMapBox.a */; };
-		68B5970317679562000B9A30 /* RootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68B5970217679562000B9A30 /* RootView.xib */; };
+		8A87F2183178451990E099EF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E80AC534725B4DA7951A88D0 /* libPods.a */; };
+		FB03901B17DD0F6F00BDF2A6 /* iPhoneDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB03901A17DD0F6F00BDF2A6 /* iPhoneDetailViewController.m */; };
 		FB0F21A617742AD30034274D /* BMMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0F21A517742AD30034274D /* BMMapManager.m */; };
+		FB2F64A017E129EE00B1DF3B /* libMapBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB2F649B17E1298000B1DF3B /* libMapBox.a */; };
 		FB3859E2177176900097D988 /* map-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = FB3859E1177176900097D988 /* map-marker.png */; };
+		FB4DF7E317E2E6DC00364BB1 /* MapBox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FB2F649D17E1298000B1DF3B /* MapBox.bundle */; };
+		FB5C4B2E17DE7F8B00715685 /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5C4B2D17DE7F8B00715685 /* iPadStoryboard.storyboard */; };
+		FB5C4B3117DE7FC800715685 /* iPadDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5C4B3017DE7FC800715685 /* iPadDetailViewController.m */; };
 		FB87A824177188D900F455D7 /* blank-40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = FB87A823177188D900F455D7 /* blank-40x40.png */; };
-		FB8B2CD21771358700ABC983 /* burgmap-ios-search.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = FB8B2CD11771358700ABC983 /* burgmap-ios-search.sqlite */; };
-		FB8DDBF11774216E001EF6F4 /* BurgCtBDorBg.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = FB8DDBF01774216E001EF6F4 /* BurgCtBDorBg.mbtiles */; };
-		FBD3C8E8176E784F00A919EF /* BurgChablisCurrent.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = FBD3C8E4176E784F00A919EF /* BurgChablisCurrent.mbtiles */; };
-		FBD3C8E9176E784F00A919EF /* BurgCtBDorCurrent.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = FBD3C8E5176E784F00A919EF /* BurgCtBDorCurrent.mbtiles */; };
-		FBD3C8EA176E784F00A919EF /* FraLargeBg.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = FBD3C8E6176E784F00A919EF /* FraLargeBg.mbtiles */; };
-		FBEAC8F617722B4A001B17EC /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = FBEAC8F517722B4A001B17EC /* Icon-72.png */; };
-		FBEAC8F817722B54001B17EC /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBEAC8F717722B54001B17EC /* Icon-72@2x.png */; };
-		FBFFDA291774E94E00299A38 /* MapBox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 68B596FB1766E4C4000B9A30 /* MapBox.bundle */; };
+		FB88E2F317DD121900FE2A6C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB88E2F217DD121900FE2A6C /* CoreData.framework */; };
+		FB88E2F717DD155C00FE2A6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB88E2F617DD155C00FE2A6C /* AppDelegate.m */; };
+		FB8FFC5B17DEA30B00571032 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = FB8FFC5A17DEA30B00571032 /* NSString+URLEncoding.m */; };
+		FB8FFC6B17DEE9E600571032 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB8FFC6A17DEE9E600571032 /* Images.xcassets */; };
+		FBACBCDA17DE450800F082BB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBACBCD917DE450800F082BB /* SystemConfiguration.framework */; };
+		FBACBCDD17DE454B00F082BB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBACBCDC17DE454B00F082BB /* Security.framework */; };
+		FBACBCDF17DE457B00F082BB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBACBCDE17DE457B00F082BB /* MobileCoreServices.framework */; };
+		FBE0E58117E04F0700DF50B9 /* BMSearchSuggestionControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE0E58017E04F0700DF50B9 /* BMSearchSuggestionControllerViewController.m */; };
+		FBEFD1E117DD97A6003B985E /* iPhoneStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBEFD1E017DD97A6003B985E /* iPhoneStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		68B596F81766E4C4000B9A30 /* PBXContainerItemProxy */ = {
+		FB2F649A17E1298000B1DF3B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 68B596F31766E4C4000B9A30 /* MapView.xcodeproj */;
+			containerPortal = FB2F649517E1298000B1DF3B /* MapView.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 17F31EFA1331050A00122B16;
 			remoteInfo = MapView;
 		};
-		68B596FA1766E4C4000B9A30 /* PBXContainerItemProxy */ = {
+		FB2F649C17E1298000B1DF3B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 68B596F31766E4C4000B9A30 /* MapView.xcodeproj */;
+			containerPortal = FB2F649517E1298000B1DF3B /* MapView.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = DD6A83751644A20C0097F31F;
 			remoteInfo = Resources;
 		};
-		68B596FC1766E522000B9A30 /* PBXContainerItemProxy */ = {
+		FB2F649E17E129AB00B1DF3B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 68B596F31766E4C4000B9A30 /* MapView.xcodeproj */;
+			containerPortal = FB2F649517E1298000B1DF3B /* MapView.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = B8C974130E8A19B2007D16AD;
 			remoteInfo = MapView;
 		};
+		FB4DF7E117E2E6BF00364BB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB2F649517E1298000B1DF3B /* MapView.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DD6A83741644A20C0097F31F;
+			remoteInfo = Resources;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6816434117652BD200C75EA3 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		6816434217652BD200C75EA3 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		68164345176571D800C75EA3 /* MGSplitCornersView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSplitCornersView.h; sourceTree = "<group>"; };
-		68164346176571D800C75EA3 /* MGSplitCornersView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSplitCornersView.m; sourceTree = "<group>"; };
-		68164347176571D800C75EA3 /* MGSplitDividerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSplitDividerView.h; sourceTree = "<group>"; };
-		68164348176571D800C75EA3 /* MGSplitDividerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSplitDividerView.m; sourceTree = "<group>"; };
-		6816434B176571D800C75EA3 /* MGSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSplitViewController.h; sourceTree = "<group>"; };
-		6816434C176571D800C75EA3 /* MGSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSplitViewController.m; sourceTree = "<group>"; };
-		6816435417663A2200C75EA3 /* MGSplitViewAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSplitViewAppDelegate.h; sourceTree = "<group>"; };
-		6816435517663A2200C75EA3 /* MGSplitViewAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSplitViewAppDelegate.m; sourceTree = "<group>"; };
-		68718CA81766895E00A80747 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		68718CFF17668CA500A80747 /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
 		688BE8721761324E00283929 /* Burgundy Wine Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Burgundy Wine Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		688BE8751761324E00283929 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		688BE8771761324E00283929 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -85,8 +77,6 @@
 		688BE87F1761324E00283929 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		688BE8811761324E00283929 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		688BE8831761324E00283929 /* Burgundy Wine Map-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Burgundy Wine Map-Prefix.pch"; sourceTree = "<group>"; };
-		688BE8901761324E00283929 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		688BE8911761324E00283929 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		688BE89F1761324E00283929 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		688BE8B8176134D600283929 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		688BE8BA176134DE00283929 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -94,19 +84,43 @@
 		688BE8BE176134EC00283929 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		68A1D06B1766ABB400EDE0A7 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		68A1D06C1766ABB400EDE0A7 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
-		68B596F31766E4C4000B9A30 /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "mapbox-ios-sdk/MapView/MapView.xcodeproj"; sourceTree = "<group>"; };
-		68B5970217679562000B9A30 /* RootView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootView.xib; sourceTree = "<group>"; };
+		8B64BE9607ED4F3A8B4D54F3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		E80AC534725B4DA7951A88D0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB03901917DD0F6F00BDF2A6 /* iPhoneDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneDetailViewController.h; sourceTree = "<group>"; };
+		FB03901A17DD0F6F00BDF2A6 /* iPhoneDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhoneDetailViewController.m; sourceTree = "<group>"; };
 		FB0F21A417742AD30034274D /* BMMapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMMapManager.h; sourceTree = "<group>"; };
 		FB0F21A517742AD30034274D /* BMMapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMMapManager.m; sourceTree = "<group>"; };
+		FB2F649517E1298000B1DF3B /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "Burgundy Wine Map/mapbox-ios-sdk/MapView/MapView.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		FB3859E1177176900097D988 /* map-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-marker.png"; sourceTree = "<group>"; };
+		FB5C4B2D17DE7F8B00715685 /* iPadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPadStoryboard.storyboard; sourceTree = "<group>"; };
+		FB5C4B2F17DE7FC800715685 /* iPadDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPadDetailViewController.h; sourceTree = "<group>"; };
+		FB5C4B3017DE7FC800715685 /* iPadDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPadDetailViewController.m; sourceTree = "<group>"; };
 		FB87A823177188D900F455D7 /* blank-40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blank-40x40.png"; sourceTree = "<group>"; };
-		FB8B2CD11771358700ABC983 /* burgmap-ios-search.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "burgmap-ios-search.sqlite"; sourceTree = "<group>"; };
-		FB8DDBF01774216E001EF6F4 /* BurgCtBDorBg.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = BurgCtBDorBg.mbtiles; sourceTree = "<group>"; };
-		FBD3C8E4176E784F00A919EF /* BurgChablisCurrent.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = BurgChablisCurrent.mbtiles; sourceTree = "<group>"; };
-		FBD3C8E5176E784F00A919EF /* BurgCtBDorCurrent.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = BurgCtBDorCurrent.mbtiles; sourceTree = "<group>"; };
-		FBD3C8E6176E784F00A919EF /* FraLargeBg.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = FraLargeBg.mbtiles; sourceTree = "<group>"; };
-		FBEAC8F517722B4A001B17EC /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "../../Icon-72.png"; sourceTree = "<group>"; };
-		FBEAC8F717722B54001B17EC /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72@2x.png"; path = "../../Icon-72@2x.png"; sourceTree = "<group>"; };
+		FB88E2F217DD121900FE2A6C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FB88E2F517DD155C00FE2A6C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FB88E2F617DD155C00FE2A6C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FB8FFC4B17DE8E3600571032 /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
+		FB8FFC4C17DE8E3600571032 /* Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-152.png"; sourceTree = "<group>"; };
+		FB8FFC4D17DE8E3600571032 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
+		FB8FFC4E17DE8E3600571032 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
+		FB8FFC4F17DE8E3600571032 /* Icon-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-58.png"; sourceTree = "<group>"; };
+		FB8FFC5017DE8E3600571032 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		FB8FFC5117DE8E3600571032 /* Icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-80.png"; sourceTree = "<group>"; };
+		FB8FFC5917DEA30B00571032 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		FB8FFC5A17DEA30B00571032 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		FB8FFC6A17DEE9E600571032 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FB8FFC6C17DEEA6300571032 /* Launch-iPad-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Launch-iPad-Landscape.png"; sourceTree = "<group>"; };
+		FB8FFC6D17DEEA6300571032 /* Launch-iPad-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Launch-iPad-Landscape@2x.png"; sourceTree = "<group>"; };
+		FB8FFC6E17DEEA6300571032 /* Launch-iPad-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Launch-iPad-Portrait.png"; sourceTree = "<group>"; };
+		FB8FFC6F17DEEA6300571032 /* Launch-iPad-Portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Launch-iPad-Portrait@2x.png"; sourceTree = "<group>"; };
+		FB8FFC7417DEEAEE00571032 /* Launch-iPhone-3.5in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Launch-iPhone-3.5in.png"; sourceTree = "<group>"; };
+		FB8FFC7517DEEAEE00571032 /* Launch-iPhone-4in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Launch-iPhone-4in.png"; sourceTree = "<group>"; };
+		FBACBCD917DE450800F082BB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FBACBCDC17DE454B00F082BB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FBACBCDE17DE457B00F082BB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		FBE0E57F17E04F0700DF50B9 /* BMSearchSuggestionControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMSearchSuggestionControllerViewController.h; sourceTree = "<group>"; };
+		FBE0E58017E04F0700DF50B9 /* BMSearchSuggestionControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMSearchSuggestionControllerViewController.m; sourceTree = "<group>"; };
+		FBEFD1E017DD97A6003B985E /* iPhoneStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = iPhoneStoryboard.storyboard; path = ../iPhoneStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,33 +128,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68B597011766E560000B9A30 /* libMapBox.a in Frameworks */,
-				688BE8BF176134EC00283929 /* libz.dylib in Frameworks */,
-				688BE8BD176134E600283929 /* libsqlite3.dylib in Frameworks */,
+				FBACBCDF17DE457B00F082BB /* MobileCoreServices.framework in Frameworks */,
+				FBACBCDD17DE454B00F082BB /* Security.framework in Frameworks */,
+				FBACBCDA17DE450800F082BB /* SystemConfiguration.framework in Frameworks */,
+				FB88E2F317DD121900FE2A6C /* CoreData.framework in Frameworks */,
 				688BE8BB176134DE00283929 /* QuartzCore.framework in Frameworks */,
 				688BE8B9176134D600283929 /* CoreLocation.framework in Frameworks */,
 				688BE8761761324E00283929 /* UIKit.framework in Frameworks */,
 				688BE8781761324E00283929 /* Foundation.framework in Frameworks */,
 				688BE87A1761324E00283929 /* CoreGraphics.framework in Frameworks */,
+				FB2F64A017E129EE00B1DF3B /* libMapBox.a in Frameworks */,
+				688BE8BF176134EC00283929 /* libz.dylib in Frameworks */,
+				688BE8BD176134E600283929 /* libsqlite3.dylib in Frameworks */,
+				8A87F2183178451990E099EF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		68164344176571D800C75EA3 /* MGSplitView */ = {
-			isa = PBXGroup;
-			children = (
-				68164345176571D800C75EA3 /* MGSplitCornersView.h */,
-				68164346176571D800C75EA3 /* MGSplitCornersView.m */,
-				68164347176571D800C75EA3 /* MGSplitDividerView.h */,
-				68164348176571D800C75EA3 /* MGSplitDividerView.m */,
-				6816434B176571D800C75EA3 /* MGSplitViewController.h */,
-				6816434C176571D800C75EA3 /* MGSplitViewController.m */,
-			);
-			path = MGSplitView;
-			sourceTree = "<group>";
-		};
 		688BE8691761324E00283929 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +157,7 @@
 				688BE87B1761324E00283929 /* Burgundy Wine Map */,
 				688BE8741761324E00283929 /* Frameworks */,
 				688BE8731761324E00283929 /* Products */,
+				8B64BE9607ED4F3A8B4D54F3 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,10 +172,15 @@
 		688BE8741761324E00283929 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FBACBCDE17DE457B00F082BB /* MobileCoreServices.framework */,
+				FBACBCDC17DE454B00F082BB /* Security.framework */,
+				FBACBCD917DE450800F082BB /* SystemConfiguration.framework */,
+				FB88E2F217DD121900FE2A6C /* CoreData.framework */,
 				688BE8751761324E00283929 /* UIKit.framework */,
 				688BE8771761324E00283929 /* Foundation.framework */,
 				688BE8791761324E00283929 /* CoreGraphics.framework */,
 				688BE89F1761324E00283929 /* SenTestingKit.framework */,
+				E80AC534725B4DA7951A88D0 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -176,18 +188,16 @@
 		688BE87B1761324E00283929 /* Burgundy Wine Map */ = {
 			isa = PBXGroup;
 			children = (
+				FB88E2F517DD155C00FE2A6C /* AppDelegate.h */,
+				FB88E2F617DD155C00FE2A6C /* AppDelegate.m */,
 				FB0F21A417742AD30034274D /* BMMapManager.h */,
 				FB0F21A517742AD30034274D /* BMMapManager.m */,
-				6816435417663A2200C75EA3 /* MGSplitViewAppDelegate.h */,
-				6816435517663A2200C75EA3 /* MGSplitViewAppDelegate.m */,
-				688BE8901761324E00283929 /* RootViewController.h */,
-				688BE8911761324E00283929 /* RootViewController.m */,
-				6816434117652BD200C75EA3 /* DetailViewController.h */,
-				6816434217652BD200C75EA3 /* DetailViewController.m */,
-				68718CA81766895E00A80747 /* MainWindow.xib */,
-				68B5970217679562000B9A30 /* RootView.xib */,
-				68718CFF17668CA500A80747 /* DetailView.xib */,
+				FBA84C5017E124A60008BC48 /* iPhone */,
+				FBA84C4F17E124A10008BC48 /* iPad */,
 				688BE87C1761324E00283929 /* Supporting Files */,
+				FB8FFC5917DEA30B00571032 /* NSString+URLEncoding.h */,
+				FB8FFC5A17DEA30B00571032 /* NSString+URLEncoding.m */,
+				FB8FFC6A17DEE9E600571032 /* Images.xcassets */,
 			);
 			path = "Burgundy Wine Map";
 			sourceTree = "<group>";
@@ -195,10 +205,9 @@
 		688BE87C1761324E00283929 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FB8FFC4A17DE8E3600571032 /* Resources */,
 				FB8B2CBD1771261400ABC983 /* External Sources */,
 				FBD3C8E3176E784F00A919EF /* Resources */,
-				68164344176571D800C75EA3 /* MGSplitView */,
-				68B596F31766E4C4000B9A30 /* MapView.xcodeproj */,
 				688BE87D1761324E00283929 /* Burgundy Wine Map-Info.plist */,
 				688BE87E1761324E00283929 /* InfoPlist.strings */,
 				688BE8811761324E00283929 /* main.m */,
@@ -209,11 +218,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		68B596F41766E4C4000B9A30 /* Products */ = {
+		FB2F649617E1298000B1DF3B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				68B596F91766E4C4000B9A30 /* libMapBox.a */,
-				68B596FB1766E4C4000B9A30 /* MapBox.bundle */,
+				FB2F649B17E1298000B1DF3B /* libMapBox.a */,
+				FB2F649D17E1298000B1DF3B /* MapBox.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -225,18 +234,54 @@
 			name = "External Sources";
 			sourceTree = "<group>";
 		};
+		FB8FFC4A17DE8E3600571032 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FB2F649517E1298000B1DF3B /* MapView.xcodeproj */,
+				FB8FFC6C17DEEA6300571032 /* Launch-iPad-Landscape.png */,
+				FB8FFC6D17DEEA6300571032 /* Launch-iPad-Landscape@2x.png */,
+				FB8FFC6E17DEEA6300571032 /* Launch-iPad-Portrait.png */,
+				FB8FFC6F17DEEA6300571032 /* Launch-iPad-Portrait@2x.png */,
+				FB8FFC7417DEEAEE00571032 /* Launch-iPhone-3.5in.png */,
+				FB8FFC7517DEEAEE00571032 /* Launch-iPhone-4in.png */,
+				FB8FFC4B17DE8E3600571032 /* Icon-120.png */,
+				FB8FFC4C17DE8E3600571032 /* Icon-152.png */,
+				FB8FFC4D17DE8E3600571032 /* Icon-29.png */,
+				FB8FFC4E17DE8E3600571032 /* Icon-40.png */,
+				FB8FFC4F17DE8E3600571032 /* Icon-58.png */,
+				FB8FFC5017DE8E3600571032 /* Icon-76.png */,
+				FB8FFC5117DE8E3600571032 /* Icon-80.png */,
+			);
+			path = Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		FBA84C4F17E124A10008BC48 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				FB5C4B2D17DE7F8B00715685 /* iPadStoryboard.storyboard */,
+				FB5C4B3017DE7FC800715685 /* iPadDetailViewController.m */,
+				FB5C4B2F17DE7FC800715685 /* iPadDetailViewController.h */,
+				FBE0E57F17E04F0700DF50B9 /* BMSearchSuggestionControllerViewController.h */,
+				FBE0E58017E04F0700DF50B9 /* BMSearchSuggestionControllerViewController.m */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		FBA84C5017E124A60008BC48 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				FBEFD1E017DD97A6003B985E /* iPhoneStoryboard.storyboard */,
+				FB03901917DD0F6F00BDF2A6 /* iPhoneDetailViewController.h */,
+				FB03901A17DD0F6F00BDF2A6 /* iPhoneDetailViewController.m */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
 		FBD3C8E3176E784F00A919EF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FBEAC8F717722B54001B17EC /* Icon-72@2x.png */,
-				FBEAC8F517722B4A001B17EC /* Icon-72.png */,
-				FB8DDBF01774216E001EF6F4 /* BurgCtBDorBg.mbtiles */,
 				FB87A823177188D900F455D7 /* blank-40x40.png */,
 				FB3859E1177176900097D988 /* map-marker.png */,
-				FB8B2CD11771358700ABC983 /* burgmap-ios-search.sqlite */,
-				FBD3C8E4176E784F00A919EF /* BurgChablisCurrent.mbtiles */,
-				FBD3C8E5176E784F00A919EF /* BurgCtBDorCurrent.mbtiles */,
-				FBD3C8E6176E784F00A919EF /* FraLargeBg.mbtiles */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -248,14 +293,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 688BE8B01761324E00283929 /* Build configuration list for PBXNativeTarget "Burgundy Wine Map" */;
 			buildPhases = (
+				D785B33020D147BD859983D1 /* Check Pods Manifest.lock */,
 				688BE86E1761324E00283929 /* Sources */,
 				688BE86F1761324E00283929 /* Frameworks */,
 				688BE8701761324E00283929 /* Resources */,
+				370E6F296AEC478786402529 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				68B596FD1766E522000B9A30 /* PBXTargetDependency */,
+				FB4DF7E217E2E6BF00364BB1 /* PBXTargetDependency */,
+				FB2F649F17E129AB00B1DF3B /* PBXTargetDependency */,
 			);
 			name = "Burgundy Wine Map";
 			productName = "Burgundy Wine Map";
@@ -283,8 +331,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 68B596F41766E4C4000B9A30 /* Products */;
-					ProjectRef = 68B596F31766E4C4000B9A30 /* MapView.xcodeproj */;
+					ProductGroup = FB2F649617E1298000B1DF3B /* Products */;
+					ProjectRef = FB2F649517E1298000B1DF3B /* MapView.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -295,18 +343,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		68B596F91766E4C4000B9A30 /* libMapBox.a */ = {
+		FB2F649B17E1298000B1DF3B /* libMapBox.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libMapBox.a;
-			remoteRef = 68B596F81766E4C4000B9A30 /* PBXContainerItemProxy */;
+			remoteRef = FB2F649A17E1298000B1DF3B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		68B596FB1766E4C4000B9A30 /* MapBox.bundle */ = {
+		FB2F649D17E1298000B1DF3B /* MapBox.bundle */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = MapBox.bundle;
-			remoteRef = 68B596FA1766E4C4000B9A30 /* PBXContainerItemProxy */;
+			remoteRef = FB2F649C17E1298000B1DF3B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -316,49 +364,79 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB4DF7E317E2E6DC00364BB1 /* MapBox.bundle in Resources */,
 				688BE8801761324E00283929 /* InfoPlist.strings in Resources */,
-				68718CA91766895E00A80747 /* MainWindow.xib in Resources */,
-				68718D0017668CA500A80747 /* DetailView.xib in Resources */,
-				68B5970317679562000B9A30 /* RootView.xib in Resources */,
-				FBD3C8E8176E784F00A919EF /* BurgChablisCurrent.mbtiles in Resources */,
-				FBD3C8E9176E784F00A919EF /* BurgCtBDorCurrent.mbtiles in Resources */,
-				FBD3C8EA176E784F00A919EF /* FraLargeBg.mbtiles in Resources */,
-				FB8B2CD21771358700ABC983 /* burgmap-ios-search.sqlite in Resources */,
+				FBEFD1E117DD97A6003B985E /* iPhoneStoryboard.storyboard in Resources */,
 				FB3859E2177176900097D988 /* map-marker.png in Resources */,
+				FB8FFC6B17DEE9E600571032 /* Images.xcassets in Resources */,
 				FB87A824177188D900F455D7 /* blank-40x40.png in Resources */,
-				FBEAC8F617722B4A001B17EC /* Icon-72.png in Resources */,
-				FBEAC8F817722B54001B17EC /* Icon-72@2x.png in Resources */,
-				FB8DDBF11774216E001EF6F4 /* BurgCtBDorBg.mbtiles in Resources */,
-				FBFFDA291774E94E00299A38 /* MapBox.bundle in Resources */,
+				FB5C4B2E17DE7F8B00715685 /* iPadStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		370E6F296AEC478786402529 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D785B33020D147BD859983D1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		688BE86E1761324E00283929 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB88E2F717DD155C00FE2A6C /* AppDelegate.m in Sources */,
+				FB03901B17DD0F6F00BDF2A6 /* iPhoneDetailViewController.m in Sources */,
 				688BE8821761324E00283929 /* main.m in Sources */,
-				688BE8921761324E00283929 /* RootViewController.m in Sources */,
-				6816434317652BD200C75EA3 /* DetailViewController.m in Sources */,
-				6816434D176571D800C75EA3 /* MGSplitCornersView.m in Sources */,
-				6816434E176571D800C75EA3 /* MGSplitDividerView.m in Sources */,
-				68164350176571D800C75EA3 /* MGSplitViewController.m in Sources */,
-				6816435617663A2300C75EA3 /* MGSplitViewAppDelegate.m in Sources */,
+				FB5C4B3117DE7FC800715685 /* iPadDetailViewController.m in Sources */,
 				68A1D06D1766ABB400EDE0A7 /* NSData+Base64.m in Sources */,
+				FB8FFC5B17DEA30B00571032 /* NSString+URLEncoding.m in Sources */,
 				FB0F21A617742AD30034274D /* BMMapManager.m in Sources */,
+				FBE0E58117E04F0700DF50B9 /* BMSearchSuggestionControllerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		68B596FD1766E522000B9A30 /* PBXTargetDependency */ = {
+		FB2F649F17E129AB00B1DF3B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MapView;
-			targetProxy = 68B596FC1766E522000B9A30 /* PBXContainerItemProxy */;
+			targetProxy = FB2F649E17E129AB00B1DF3B /* PBXContainerItemProxy */;
+		};
+		FB4DF7E217E2E6BF00364BB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Resources;
+			targetProxy = FB4DF7E117E2E6BF00364BB1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -399,7 +477,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-Wall";
 				SDKROOT = iphoneos;
@@ -425,7 +503,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = (
 					"-DNS_BLOCK_ASSERTIONS=1",
 					"-Wall",
@@ -438,7 +516,10 @@
 		};
 		688BE8B11761324E00283929 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B64BE9607ED4F3A8B4D54F3 /* Pods.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,18 +529,24 @@
 				GCC_PREFIX_HEADER = "Burgundy Wine Map/Burgundy Wine Map-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/Burgundy\\ Wine\\ Map/mapbox-ios-sdk/**",
+					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Burgundy Wine Map/Burgundy Wine Map-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "Burgundy Wine Map";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		688BE8B21761324E00283929 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B64BE9607ED4F3A8B4D54F3 /* Pods.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -469,11 +556,14 @@
 				GCC_PREFIX_HEADER = "Burgundy Wine Map/Burgundy Wine Map-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/Burgundy\\ Wine\\ Map/mapbox-ios-sdk/**",
+					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Burgundy Wine Map/Burgundy Wine Map-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "Burgundy Wine Map";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
