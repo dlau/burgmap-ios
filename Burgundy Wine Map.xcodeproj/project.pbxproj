@@ -33,6 +33,7 @@
 		FBACBCDA17DE450800F082BB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBACBCD917DE450800F082BB /* SystemConfiguration.framework */; };
 		FBACBCDD17DE454B00F082BB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBACBCDC17DE454B00F082BB /* Security.framework */; };
 		FBACBCDF17DE457B00F082BB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBACBCDE17DE457B00F082BB /* MobileCoreServices.framework */; };
+		FBCCE36C17EBD641007A3EEA /* routeme.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBCCE36B17EBD641007A3EEA /* routeme.plist */; };
 		FBE0E58117E04F0700DF50B9 /* BMSearchSuggestionControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE0E58017E04F0700DF50B9 /* BMSearchSuggestionControllerViewController.m */; };
 		FBEFD1E117DD97A6003B985E /* iPhoneStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBEFD1E017DD97A6003B985E /* iPhoneStoryboard.storyboard */; };
 /* End PBXBuildFile section */
@@ -118,6 +119,7 @@
 		FBACBCD917DE450800F082BB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		FBACBCDC17DE454B00F082BB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		FBACBCDE17DE457B00F082BB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		FBCCE36B17EBD641007A3EEA /* routeme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = routeme.plist; sourceTree = "<group>"; };
 		FBE0E57F17E04F0700DF50B9 /* BMSearchSuggestionControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMSearchSuggestionControllerViewController.h; sourceTree = "<group>"; };
 		FBE0E58017E04F0700DF50B9 /* BMSearchSuggestionControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMSearchSuggestionControllerViewController.m; sourceTree = "<group>"; };
 		FBEFD1E017DD97A6003B985E /* iPhoneStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = iPhoneStoryboard.storyboard; path = ../iPhoneStoryboard.storyboard; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 				FB8FFC4F17DE8E3600571032 /* Icon-58.png */,
 				FB8FFC5017DE8E3600571032 /* Icon-76.png */,
 				FB8FFC5117DE8E3600571032 /* Icon-80.png */,
+				FBCCE36B17EBD641007A3EEA /* routeme.plist */,
 			);
 			path = Resources;
 			sourceTree = SOURCE_ROOT;
@@ -364,6 +367,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBCCE36C17EBD641007A3EEA /* routeme.plist in Resources */,
 				FB4DF7E317E2E6DC00364BB1 /* MapBox.bundle in Resources */,
 				688BE8801761324E00283929 /* InfoPlist.strings in Resources */,
 				FBEFD1E117DD97A6003B985E /* iPhoneStoryboard.storyboard in Resources */,
