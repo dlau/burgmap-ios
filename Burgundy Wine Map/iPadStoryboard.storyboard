@@ -76,6 +76,9 @@
                                                 <segment title="Streets"/>
                                                 <segment title="Satellite"/>
                                             </segments>
+                                            <connections>
+                                                <action selector="toggleBaseLayerType:" destination="yGb-Tp-DP3" eventType="valueChanged" id="b4J-Ao-zCw"/>
+                                            </connections>
                                         </segmentedControl>
                                     </barButtonItem>
                                 </items>

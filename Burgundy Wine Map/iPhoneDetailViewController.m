@@ -223,6 +223,14 @@
 {
     bgLayerSegmentedControl.hidden = YES;
 }
+- (void)searchDisplayControllerDidBeginSearch:(UISearchDisplayController *)controller
+{
+    float offsetStatusBar = 20.0;
+    float rightMargin = 5.0;
+    CGRect searchBarBounds = CGRectMake(0.0, offsetStatusBar, CGRectGetWidth(self.view.bounds) - rightMargin,CGRectGetHeight(searchBar.bounds));
+    [searchBar setFrame: searchBarBounds];
+    
+}
 - (void)searchDisplayControllerDidEndSearch:(UISearchDisplayController *)controller
 {
     bgLayerSegmentedControl.hidden = NO;
