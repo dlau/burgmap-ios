@@ -321,6 +321,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Daryl Lau";
+				TargetAttributes = {
+					688BE8711761324E00283929 = {
+						DevelopmentTeam = 45UE9P859T;
+					};
+				};
 			};
 			buildConfigurationList = 688BE86D1761324E00283929 /* Build configuration list for PBXProject "Burgundy Wine Map" */;
 			compatibilityVersion = "Xcode 3.2";
