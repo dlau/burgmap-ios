@@ -74,6 +74,7 @@
     m_MapView.delegate = self;
     m_MapView.centerCoordinate = CLLocationCoordinate2DMake(47.100045,4.852867);
     m_MapView.showLogoBug = NO;
+    m_MapView.adjustTilesForRetinaDisplay = YES;
     
     [self.view addSubview:m_MapView];
     
