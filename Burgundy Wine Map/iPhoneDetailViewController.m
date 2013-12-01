@@ -71,6 +71,7 @@
     m_MapView = [[BMMapManager getInstance]createMapViewWithBaseLayer:eBLS_Streets withFrame:remainder];
     m_MapView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     m_MapView.zoom = 11;
+    m_MapView.maxZoom = 18;
     m_MapView.delegate = self;
     m_MapView.centerCoordinate = CLLocationCoordinate2DMake(47.100045,4.852867);
     m_MapView.showLogoBug = NO;
