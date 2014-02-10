@@ -16,7 +16,9 @@
 @property IBOutlet UISearchBar *searchBar;
 @property IBOutlet UIToolbar *toolBar;
 @property IBOutlet UISegmentedControl *bgLayerSegmentedControl;
+@property IBOutlet UIButton *btn_JumpLocation;
 
 - (IBAction)toggleBaseLayerType:(id)sender;
+- (IBAction)jumpLocation:(id) sender;
 
 @end

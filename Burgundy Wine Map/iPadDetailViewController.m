@@ -12,6 +12,8 @@
 #import "RMInteractiveSource.h"
 #import "BMMapManager.h"
 #import "BMSearchSuggestionControllerViewController.h"
+#import "NSString+FontAwesome.h"
+
 
 @interface iPadDetailViewController ()
     -(CGRect) fixDimensions;
@@ -28,7 +30,7 @@
 @implementation iPadDetailViewController
 
 
-@synthesize searchBar,toolBar,bgLayerSegmentedControl,m_SearchResults,m_SearchController,m_MapView;
+@synthesize searchBar,toolBar,bgLayerSegmentedControl,m_SearchResults,m_SearchController,m_MapView,btn_JumpLocation;
 
 #pragma mark - Search results controller delegate method
 
@@ -88,7 +90,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    self.btn_JumpLocation.titleLabel.font = [UIFont fontWithName:kFontAwesomeFamilyName size:25];
+    [self.btn_JumpLocation setTitle:[NSString fontAwesomeIconStringForEnum:FAIconLocationArrow] forState:UIControlStateNormal];
+    [self.btn_JumpLocation setTitle:[NSString fontAwesomeIconStringForEnum:FAIconLocationArrow] forState:UIControlStateSelected];
+    [self.btn_JumpLocation setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     CGRect remainder = [self fixDimensions];
     
     self.m_MapView = [[BMMapManager getInstance]createMapViewWithBaseLayer:eBLS_Streets withFrame:remainder];
@@ -99,6 +104,7 @@
     self.m_MapView.centerCoordinate = CLLocationCoordinate2DMake(47.100045,4.852867);
     self.m_MapView.showLogoBug = NO;
     self.m_MapView.adjustTilesForRetinaDisplay = YES;
+    self.m_MapView.showsUserLocation = YES;
     
     [self.view addSubview:m_MapView];
     
@@ -239,6 +245,11 @@ shouldReloadTableForSearchString:(NSString*)searchString
      forMapView:self.m_MapView];
 }
 
+- (IBAction)jumpLocation:(id) sender
+{
+    self.m_MapView.showsUserLocation = self.m_MapView.showsUserLocation ? NO : YES;
+    [self.btn_JumpLocation setTitleColor:self.m_MapView.showsUserLocation ? [UIColor blueColor] : [UIColor grayColor] forState:UIControlStateNormal];
+}
 
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation

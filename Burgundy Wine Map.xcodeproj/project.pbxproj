@@ -22,6 +22,7 @@
 		FB0F21A617742AD30034274D /* BMMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0F21A517742AD30034274D /* BMMapManager.m */; };
 		FB2F64A017E129EE00B1DF3B /* libMapBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB2F649B17E1298000B1DF3B /* libMapBox.a */; };
 		FB3859E2177176900097D988 /* map-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = FB3859E1177176900097D988 /* map-marker.png */; };
+		FB4BF7C618A8A6E700AE21B8 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB4BF7C518A8A27600AE21B8 /* FontAwesome.ttf */; };
 		FB4DF7E317E2E6DC00364BB1 /* MapBox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FB2F649D17E1298000B1DF3B /* MapBox.bundle */; };
 		FB5C4B2E17DE7F8B00715685 /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5C4B2D17DE7F8B00715685 /* iPadStoryboard.storyboard */; };
 		FB5C4B3117DE7FC800715685 /* iPadDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5C4B3017DE7FC800715685 /* iPadDetailViewController.m */; };
@@ -93,6 +94,7 @@
 		FB0F21A517742AD30034274D /* BMMapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMMapManager.m; sourceTree = "<group>"; };
 		FB2F649517E1298000B1DF3B /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "Burgundy Wine Map/mapbox-ios-sdk/MapView/MapView.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		FB3859E1177176900097D988 /* map-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-marker.png"; sourceTree = "<group>"; };
+		FB4BF7C518A8A27600AE21B8 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		FB5C4B2D17DE7F8B00715685 /* iPadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPadStoryboard.storyboard; sourceTree = "<group>"; };
 		FB5C4B2F17DE7FC800715685 /* iPadDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPadDetailViewController.h; sourceTree = "<group>"; };
 		FB5C4B3017DE7FC800715685 /* iPadDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPadDetailViewController.m; sourceTree = "<group>"; };
@@ -100,22 +102,9 @@
 		FB88E2F217DD121900FE2A6C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		FB88E2F517DD155C00FE2A6C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FB88E2F617DD155C00FE2A6C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FB8FFC4B17DE8E3600571032 /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
-		FB8FFC4C17DE8E3600571032 /* Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-152.png"; sourceTree = "<group>"; };
-		FB8FFC4D17DE8E3600571032 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
-		FB8FFC4E17DE8E3600571032 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
-		FB8FFC4F17DE8E3600571032 /* Icon-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-58.png"; sourceTree = "<group>"; };
-		FB8FFC5017DE8E3600571032 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
-		FB8FFC5117DE8E3600571032 /* Icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-80.png"; sourceTree = "<group>"; };
 		FB8FFC5917DEA30B00571032 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
 		FB8FFC5A17DEA30B00571032 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
 		FB8FFC6A17DEE9E600571032 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FB8FFC6C17DEEA6300571032 /* Launch-iPad-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Launch-iPad-Landscape.png"; sourceTree = "<group>"; };
-		FB8FFC6D17DEEA6300571032 /* Launch-iPad-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Launch-iPad-Landscape@2x.png"; sourceTree = "<group>"; };
-		FB8FFC6E17DEEA6300571032 /* Launch-iPad-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Launch-iPad-Portrait.png"; sourceTree = "<group>"; };
-		FB8FFC6F17DEEA6300571032 /* Launch-iPad-Portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Launch-iPad-Portrait@2x.png"; sourceTree = "<group>"; };
-		FB8FFC7417DEEAEE00571032 /* Launch-iPhone-3.5in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Launch-iPhone-3.5in.png"; sourceTree = "<group>"; };
-		FB8FFC7517DEEAEE00571032 /* Launch-iPhone-4in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Launch-iPhone-4in.png"; sourceTree = "<group>"; };
 		FBACBCD917DE450800F082BB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		FBACBCDC17DE454B00F082BB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		FBACBCDE17DE457B00F082BB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -240,19 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				FB2F649517E1298000B1DF3B /* MapView.xcodeproj */,
-				FB8FFC6C17DEEA6300571032 /* Launch-iPad-Landscape.png */,
-				FB8FFC6D17DEEA6300571032 /* Launch-iPad-Landscape@2x.png */,
-				FB8FFC6E17DEEA6300571032 /* Launch-iPad-Portrait.png */,
-				FB8FFC6F17DEEA6300571032 /* Launch-iPad-Portrait@2x.png */,
-				FB8FFC7417DEEAEE00571032 /* Launch-iPhone-3.5in.png */,
-				FB8FFC7517DEEAEE00571032 /* Launch-iPhone-4in.png */,
-				FB8FFC4B17DE8E3600571032 /* Icon-120.png */,
-				FB8FFC4C17DE8E3600571032 /* Icon-152.png */,
-				FB8FFC4D17DE8E3600571032 /* Icon-29.png */,
-				FB8FFC4E17DE8E3600571032 /* Icon-40.png */,
-				FB8FFC4F17DE8E3600571032 /* Icon-58.png */,
-				FB8FFC5017DE8E3600571032 /* Icon-76.png */,
-				FB8FFC5117DE8E3600571032 /* Icon-80.png */,
+				FB4BF7C518A8A27600AE21B8 /* FontAwesome.ttf */,
 				FBCCE36B17EBD641007A3EEA /* routeme.plist */,
 			);
 			path = Resources;
@@ -372,6 +349,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB4BF7C618A8A6E700AE21B8 /* FontAwesome.ttf in Resources */,
 				FBCCE36C17EBD641007A3EEA /* routeme.plist in Resources */,
 				FB4DF7E317E2E6DC00364BB1 /* MapBox.bundle in Resources */,
 				688BE8801761324E00283929 /* InfoPlist.strings in Resources */,
