@@ -27,8 +27,8 @@
     RMMBTilesSource *m_SourceChablisLayer;
 #endif
     
-    RMMapBoxSource *m_SourceOnlineStreetsBase;
-    RMMapBoxSource *m_SourceOnlineSatelliteBase;
+    RMMapboxSource *m_SourceOnlineStreetsBase;
+    RMMapboxSource *m_SourceOnlineSatelliteBase;
     
     FMDatabase *m_SearchDb;
     
@@ -47,7 +47,7 @@
     return instance;
 }
 
-- (RMMapBoxSource*) getOnlineMapBoxLayer:(BaseLayerSelection)layerType
+- (RMMapboxSource*) getOnlineMapBoxLayer:(BaseLayerSelection)layerType
 {
     
     if(layerType == eBLS_Streets)
@@ -184,8 +184,8 @@
     m_SourceCtBDorLayer = [[RMMBTilesSource alloc] initWithTileSetResource: MBTILES_COTEBEAUNE_COTEDOR_RESOURCE_NAME ofType:@"mbtiles"];
     m_SourceChablisLayer = [[RMMBTilesSource alloc] initWithTileSetResource:MBTILES_CHABLIS_RESOURCE_NAME ofType:@"mbtiles"];
 #endif
-    m_SourceOnlineStreetsBase = [[RMMapBoxSource alloc] initWithMapID: MAPBOX_COM_PLAIN_STREET_LAYER_ID];
-    m_SourceOnlineSatelliteBase = [[RMMapBoxSource alloc] initWithMapID: MAPBOX_COM_PLAIN_SATELLITE_LAYER_ID];
+    m_SourceOnlineStreetsBase = [[RMMapboxSource alloc] initWithMapID: MAPBOX_COM_PLAIN_STREET_LAYER_ID];
+    m_SourceOnlineSatelliteBase = [[RMMapboxSource alloc] initWithMapID: MAPBOX_COM_PLAIN_SATELLITE_LAYER_ID];
     
 }
 

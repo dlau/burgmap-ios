@@ -20,10 +20,10 @@
 		8A87F2183178451990E099EF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E80AC534725B4DA7951A88D0 /* libPods.a */; };
 		FB03901B17DD0F6F00BDF2A6 /* iPhoneDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB03901A17DD0F6F00BDF2A6 /* iPhoneDetailViewController.m */; };
 		FB0F21A617742AD30034274D /* BMMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0F21A517742AD30034274D /* BMMapManager.m */; };
-		FB2F64A017E129EE00B1DF3B /* libMapBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB2F649B17E1298000B1DF3B /* libMapBox.a */; };
+		FB2F64A017E129EE00B1DF3B /* libMapbox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB2F649B17E1298000B1DF3B /* libMapbox.a */; };
 		FB3859E2177176900097D988 /* map-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = FB3859E1177176900097D988 /* map-marker.png */; };
 		FB4BF7C618A8A6E700AE21B8 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB4BF7C518A8A27600AE21B8 /* FontAwesome.ttf */; };
-		FB4DF7E317E2E6DC00364BB1 /* MapBox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FB2F649D17E1298000B1DF3B /* MapBox.bundle */; };
+		FB4DF7E317E2E6DC00364BB1 /* Mapbox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FB2F649D17E1298000B1DF3B /* Mapbox.bundle */; };
 		FB5C4B2E17DE7F8B00715685 /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5C4B2D17DE7F8B00715685 /* iPadStoryboard.storyboard */; };
 		FB5C4B3117DE7FC800715685 /* iPadDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5C4B3017DE7FC800715685 /* iPadDetailViewController.m */; };
 		FB87A824177188D900F455D7 /* blank-40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = FB87A823177188D900F455D7 /* blank-40x40.png */; };
@@ -66,6 +66,20 @@
 			containerPortal = FB2F649517E1298000B1DF3B /* MapView.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = DD6A83741644A20C0097F31F;
+			remoteInfo = Resources;
+		};
+		FBF25A7719CCC81A00C1322B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBF25A7219CCC81A00C1322B /* MapView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 17F31EFA1331050A00122B16;
+			remoteInfo = MapView;
+		};
+		FBF25A7919CCC81A00C1322B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBF25A7219CCC81A00C1322B /* MapView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DD6A83751644A20C0097F31F;
 			remoteInfo = Resources;
 		};
 /* End PBXContainerItemProxy section */
@@ -112,6 +126,7 @@
 		FBE0E57F17E04F0700DF50B9 /* BMSearchSuggestionControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMSearchSuggestionControllerViewController.h; sourceTree = "<group>"; };
 		FBE0E58017E04F0700DF50B9 /* BMSearchSuggestionControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMSearchSuggestionControllerViewController.m; sourceTree = "<group>"; };
 		FBEFD1E017DD97A6003B985E /* iPhoneStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = iPhoneStoryboard.storyboard; path = ../iPhoneStoryboard.storyboard; sourceTree = "<group>"; };
+		FBF25A7219CCC81A00C1322B /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "Burgundy Wine Map/mapbox-ios-sdk/MapView/MapView.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,10 +143,10 @@
 				688BE8761761324E00283929 /* UIKit.framework in Frameworks */,
 				688BE8781761324E00283929 /* Foundation.framework in Frameworks */,
 				688BE87A1761324E00283929 /* CoreGraphics.framework in Frameworks */,
-				FB2F64A017E129EE00B1DF3B /* libMapBox.a in Frameworks */,
 				688BE8BF176134EC00283929 /* libz.dylib in Frameworks */,
 				688BE8BD176134E600283929 /* libsqlite3.dylib in Frameworks */,
 				8A87F2183178451990E099EF /* libPods.a in Frameworks */,
+				FB2F64A017E129EE00B1DF3B /* libMapbox.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +156,7 @@
 		688BE8691761324E00283929 = {
 			isa = PBXGroup;
 			children = (
+				FBF25A7219CCC81A00C1322B /* MapView.xcodeproj */,
 				688BE8BE176134EC00283929 /* libz.dylib */,
 				688BE8BC176134E600283929 /* libsqlite3.dylib */,
 				688BE8BA176134DE00283929 /* QuartzCore.framework */,
@@ -212,8 +228,8 @@
 		FB2F649617E1298000B1DF3B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FB2F649B17E1298000B1DF3B /* libMapBox.a */,
-				FB2F649D17E1298000B1DF3B /* MapBox.bundle */,
+				FB2F649B17E1298000B1DF3B /* libMapbox.a */,
+				FB2F649D17E1298000B1DF3B /* Mapbox.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -264,6 +280,15 @@
 				FB3859E1177176900097D988 /* map-marker.png */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		FBF25A7319CCC81A00C1322B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBF25A7819CCC81A00C1322B /* libMapbox.a */,
+				FBF25A7A19CCC81A00C1322B /* Mapbox.bundle */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +344,10 @@
 					ProductGroup = FB2F649617E1298000B1DF3B /* Products */;
 					ProjectRef = FB2F649517E1298000B1DF3B /* MapView.xcodeproj */;
 				},
+				{
+					ProductGroup = FBF25A7319CCC81A00C1322B /* Products */;
+					ProjectRef = FBF25A7219CCC81A00C1322B /* MapView.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -328,18 +357,32 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		FB2F649B17E1298000B1DF3B /* libMapBox.a */ = {
+		FB2F649B17E1298000B1DF3B /* libMapbox.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libMapBox.a;
+			path = libMapbox.a;
 			remoteRef = FB2F649A17E1298000B1DF3B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FB2F649D17E1298000B1DF3B /* MapBox.bundle */ = {
+		FB2F649D17E1298000B1DF3B /* Mapbox.bundle */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = MapBox.bundle;
+			path = Mapbox.bundle;
 			remoteRef = FB2F649C17E1298000B1DF3B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FBF25A7819CCC81A00C1322B /* libMapbox.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMapbox.a;
+			remoteRef = FBF25A7719CCC81A00C1322B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FBF25A7A19CCC81A00C1322B /* Mapbox.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Mapbox.bundle;
+			remoteRef = FBF25A7919CCC81A00C1322B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -351,7 +394,7 @@
 			files = (
 				FB4BF7C618A8A6E700AE21B8 /* FontAwesome.ttf in Resources */,
 				FBCCE36C17EBD641007A3EEA /* routeme.plist in Resources */,
-				FB4DF7E317E2E6DC00364BB1 /* MapBox.bundle in Resources */,
+				FB4DF7E317E2E6DC00364BB1 /* Mapbox.bundle in Resources */,
 				688BE8801761324E00283929 /* InfoPlist.strings in Resources */,
 				FBEFD1E117DD97A6003B985E /* iPhoneStoryboard.storyboard in Resources */,
 				FB3859E2177176900097D988 /* map-marker.png in Resources */,

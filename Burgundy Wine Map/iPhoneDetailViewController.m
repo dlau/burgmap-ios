@@ -33,7 +33,14 @@
 {
     float offsetStatusBar = 20.0;
     float rightMargin = 5.0;
-    CGRect searchBarBounds = CGRectMake(0.0, offsetStatusBar, CGRectGetWidth(self.view.bounds) - CGRectGetWidth(bgLayerSegmentedControl.bounds) - CGRectGetWidth(btn_JumpLocation.bounds) - rightMargin,CGRectGetHeight(searchBar.bounds));
+    float searchBoxWidth = CGRectGetWidth(self.view.bounds) - rightMargin;
+    if(!bgLayerSegmentedControl.hidden){
+        searchBoxWidth -= CGRectGetWidth(bgLayerSegmentedControl.bounds);
+    }
+    if(!btn_JumpLocation.hidden){
+        searchBoxWidth -= CGRectGetWidth(btn_JumpLocation.bounds);
+    }
+    CGRect searchBarBounds = CGRectMake(0.0, offsetStatusBar, searchBoxWidth,CGRectGetHeight(searchBar.bounds));
     [searchBar setFrame: searchBarBounds];
     
     float diff = (CGRectGetHeight(searchBar.bounds) - CGRectGetHeight(bgLayerSegmentedControl.bounds)) / 2;
@@ -102,7 +109,7 @@
 
 - (void)singleTapOnMap:(RMMapView *)mapView at:(CGPoint)point
 {
-    RMMapBoxSource *source = (RMMapBoxSource *)mapView.tileSource;
+    RMMapboxSource *source = (RMMapboxSource *)mapView.tileSource;
     
     if ([source conformsToProtocol:@protocol(RMInteractiveSource)] && [source supportsInteractivity])
     {
@@ -234,18 +241,16 @@
 - (void)searchDisplayControllerWillBeginSearch:(UISearchDisplayController *)controller
 {
     bgLayerSegmentedControl.hidden = YES;
+    btn_JumpLocation.hidden = YES;
 }
 - (void)searchDisplayControllerDidBeginSearch:(UISearchDisplayController *)controller
 {
-    float offsetStatusBar = 20.0;
-    float rightMargin = 5.0;
-    CGRect searchBarBounds = CGRectMake(0.0, offsetStatusBar, CGRectGetWidth(self.view.bounds) - rightMargin,CGRectGetHeight(searchBar.bounds));
-    [searchBar setFrame: searchBarBounds];
     
 }
 - (void)searchDisplayControllerDidEndSearch:(UISearchDisplayController *)controller
 {
     bgLayerSegmentedControl.hidden = NO;
+    btn_JumpLocation.hidden = NO;
     [self fixDimensions];
 }
 - (IBAction)toggleBaseLayerType:(id)sender
