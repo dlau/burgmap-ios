@@ -10,7 +10,7 @@
 #import "Mapbox.h"
 
 static NSString * const MAPBOX_COM_PLAIN_STREET_LAYER_ID = @"phatdood9.jol1107a";
-static NSString * const MAPBOX_COM_PLAIN_SATELLITE_LAYER_ID = @"phatdood9.map-s601p9rt";
+static NSString * const MAPBOX_COM_PLAIN_SATELLITE_LAYER_ID = @"phatdood9.jol4188g";
 
 #ifdef OFFLINE_TILES
 static NSString * const MBTILES_BASELAYER_RESOURCE_NAME = @"FraLargeBg";

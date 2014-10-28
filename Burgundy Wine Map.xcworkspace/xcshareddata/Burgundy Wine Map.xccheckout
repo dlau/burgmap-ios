@@ -88,14 +88,6 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>9EDEC795D04B3E279370B0DA5F4D246DCDBD8B6C</string>
-			<key>IDESourceControlWCCName</key>
-			<string>GRMustache</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>60FF76B2-29D6-4D99-9AF6-F7B8F3294272</string>
 			<key>IDESourceControlWCCName</key>
 			<string>GRMustache</string>
@@ -104,7 +96,15 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>D2343A3007C64EB665FE967B12B8E23F14C116CD</string>
+			<string>9EDEC795D04B3E279370B0DA5F4D246DCDBD8B6C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GRMustache</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4BC7319B-ED60-425A-85D5-BFF2A9544BBF</string>
 			<key>IDESourceControlWCCName</key>
 			<string>mapbox-ios-sdk</string>
 		</dict>
@@ -112,7 +112,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>4BC7319B-ED60-425A-85D5-BFF2A9544BBF</string>
+			<string>D2343A3007C64EB665FE967B12B8E23F14C116CD</string>
 			<key>IDESourceControlWCCName</key>
 			<string>mapbox-ios-sdk</string>
 		</dict>
